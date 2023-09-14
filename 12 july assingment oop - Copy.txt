@@ -1,0 +1,2145 @@
+class public ------> method public , output:- Error
+class public ------> method private , output:- Error
+class public ------> method default , output:- Error
+class public ------> method protected , output:- Error
+
+class private ------> method public , output:- Error
+class private ------> method private , output:- Error
+class private ------> method default , output:- Error
+class private ------> method protected , output:- Error
+
+class default ------> method public , output:- true
+class default ------> method private , output:- Error
+class default ------> method default , output:- true
+class default ------> method protected , output:- true
+
+class protected ------> method public , output:- Error
+class protected ------> method private , output:- Error
+class protected ------> method default , output:- Error
+class protected ------> method protected , output:- Error
+
+===============================================================================================================================================================
+
+1)single level inheretance
+
+two number addition (getter setter method ) 
+constant 
+
+class A
+{
+    int a;
+    void setA(int a)
+    {
+        this.a=a;
+    }
+    int getA()
+    {
+        return a;
+    }
+}
+class B extends A
+{
+    int b;
+    void setB(int b)
+    {
+        this.b=b;
+    }
+    int getB()
+    {
+        return b;
+    }
+    void show()
+    {
+        System.out.println("addition:"+(a+b));
+    }
+}
+public class Main
+{
+    public static void main(String[] args)
+    {
+        B k=new B();
+        k.setA(3);
+        k.setB(4);
+        int m=k.getA();
+        int n=k.getB();
+        k.show();
+    }
+}
+---------------------------------------------------------------------------------------------
+two number sub (getter setter method ) 
+constant 
+
+class A
+{
+  int a;
+  void setA(int a)
+  {
+    this.a=a;
+  }
+  int getA()
+  {
+    return a;
+  }
+}
+class B extends A
+{
+  int b;
+  void setB(int b)
+  {
+    this.b=b;
+  }
+ int getB()
+ {
+  return b;
+ }
+ void show()
+ {
+  System.out.println("subtraction:"+(a-b));
+ }
+}
+public class Ab
+{
+  public static void main(String[] args)
+  {
+B k=new B();
+k.setA(7);
+k.setB(5);
+int m=k.getA();
+int n=k.getB();
+k.show();
+  }
+}
+------------------------------------------------------------------------------------------------
+two number mul(getter setter method ) 
+constant
+
+class A
+{
+  int a;
+  void setA(int a)
+  {
+    this.a=a;
+  }
+  int getA()
+  {
+    return a;
+  }
+}
+class B extends A
+{
+  int b;
+  void setB(int b)
+  {
+    this.b=b;
+  }
+ int getB()
+ {
+  return b;
+ }
+ void show()
+ {
+  System.out.println("multiplication:"+(a*b));
+ }
+}
+public class Ab
+{
+  public static void main(String[] args)
+  {
+B k=new B();
+k.setA(7);
+k.setB(8);
+int m=k.getA();
+int n=k.getB();
+k.show();
+  }
+}
+----------------------------------------------------------------------------------------------
+two number div(getter setter method ) 
+constant 
+class A
+{
+  int a;
+  void setA(int a)
+  {
+    this.a=a;
+  }
+  int getA()
+  {
+    return a;
+  }
+}
+class B extends A
+{
+  int b;
+  void setB(int b)
+  {
+    this.b=b;
+  }
+ int getB()
+ {
+  return b;
+ }
+ void show()
+ {
+  System.out.println("division:"+(a/b));
+ }
+}
+public class Ab
+{
+  public static void main(String[] args)
+  {
+B k=new B();
+k.setA(80);
+k.setB(8);
+int m=k.getA();
+int n=k.getB();
+k.show();
+  }
+------------------------------------------------------------------------------------------
+two number modular (getter setter method ) 
+constant 
+class A
+{
+  int a;
+  void setA(int a)
+  {
+    this.a=a;
+  }
+  int getA()
+  {
+    return a;
+  }
+}
+class B extends A
+{
+  int b;
+  void setB(int b)
+  {
+    this.b=b;
+  }
+ int getB()
+ {
+  return b;
+ }
+ void show()
+ {
+  System.out.println("modular:"+(a%b));
+ }
+}
+public class Ab
+{
+  public static void main(String[] args)
+  {
+B k=new B();
+k.setA(86);
+k.setB(8);
+int m=k.getA();
+int n=k.getB();
+k.show();
+  }
+}
+--------------------------------------------------------------------------------------------------
+single level 
+two number addition (getter setter method ) 
+user input 
+
+import java.util.*;
+class A
+{
+  int a;
+  void setA(int a)
+  {
+    this.a=a;
+  }
+  int getA()
+  {
+    return a;
+  }
+}
+class B extends A
+{
+  int b;
+  void setB(int b)
+  {
+    this.b=b;
+  }
+  int getB()
+  {
+    return b;
+  }
+  void show()
+  {
+    System.out.println("addition:"+(a+b));
+  }
+}
+public class Ab
+{
+  public static void main(String[] args)
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter the value of a:");
+    int a=sc.nextInt();
+    System.out.println("enter the value of b:");
+    int b=sc.nextInt();
+B k=new B();
+k.setA(a);
+k.setB(b);
+int m=k.getA();
+int n=k.getB();
+k.show();
+  }
+}
+----------------------------------------------------------------------------------------------
+single level 
+two number subtraction (getter setter method ) 
+user input
+
+import java.util.*;
+class A
+{
+  int a;
+  void setA(int a)
+  {
+    this.a=a;
+  }
+  int getA()
+  {
+    return a;
+  }
+}
+class B extends A
+{
+  int b;
+  void setB(int b)
+  {
+    this.b=b;
+  }
+  int getB()
+  {
+    return b;
+  }
+  void show()
+  {
+    System.out.println("subtraction:"+(a-b));
+  }
+}
+public class Ab
+{
+  public static void main(String[] args)
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter the value of a:");
+    int a=sc.nextInt();
+    System.out.println("enter the value of b:");
+    int b=sc.nextInt();
+B k=new B();
+k.setA(a);
+k.setB(b);
+int m=k.getA();
+int n=k.getB();
+k.show();
+  }
+}
+-------------------------------------------------------------------------------------------------
+two number multiplication (getter setter method ) 
+user input
+
+import java.util.*;
+class A
+{
+  int a;
+  void setA(int a)
+  {
+    this.a=a;
+  }
+  int getA()
+  {
+    return a;
+  }
+}
+class B extends A
+{
+  int b;
+  void setB(int b)
+  {
+    this.b=b;
+  }
+  int getB()
+  {
+    return b;
+  }
+  void show()
+  {
+    System.out.println("multiplication:"+(a*b));
+  }
+}
+public class Ab
+{
+  public static void main(String[] args)
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter the value of a:");
+    int a=sc.nextInt();
+    System.out.println("enter the value of b:");
+    int b=sc.nextInt();
+B k=new B();
+k.setA(a);
+k.setB(b);
+int m=k.getA();
+int n=k.getB();
+k.show();
+  }
+}
+-----------------------------------------------------------------------------------------------
+two number division (getter setter method ) 
+user input
+import java.util.*;
+
+class A
+{
+  int a;
+  void setA(int a)
+  {
+    this.a=a;
+  }
+  int getA()
+  {
+    return a;
+  }
+}
+class B extends A
+{
+  int b;
+  void setB(int b)
+  {
+    this.b=b;
+  }
+  int getB()
+  {
+    return b;
+  }
+  void show()
+  {
+    System.out.println("division:"+(a/b));
+  }
+}
+public class Ab
+{
+  public static void main(String[] args)
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter the value of a:");
+    int a=sc.nextInt();
+    System.out.println("enter the value of b:");
+    int b=sc.nextInt();
+B k=new B();
+k.setA(a);
+k.setB(b);
+int m=k.getA();
+int n=k.getB();
+k.show();
+  }
+}
+-----------------------------------------------------------------------------------------------
+two number modular (getter setter method ) 
+user input
+import java.util.*;
+
+class A
+{
+  int a;
+  void setA(int a)
+  {
+    this.a=a;
+  }
+  int getA()
+  {
+    return a;
+  }
+}
+class B extends A
+{
+  int b;
+  void setB(int b)
+  {
+    this.b=b;
+  }
+  int getB()
+  {
+    return b;
+  }
+  void show()
+  {
+    System.out.println("modular:"+(a%b));
+  }
+}
+public class Ab
+{
+  public static void main(String[] args)
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter the value of a:");
+    int a=sc.nextInt();
+    System.out.println("enter the value of b:");
+    int b=sc.nextInt();
+B k=new B();
+k.setA(a);
+k.setB(b);
+int m=k.getA();
+int n=k.getB();
+k.show();
+  }
+}
+----------------------------------------------------------------------------------------------
+1)single level 
+threee number addition (getter setter method ) 
+constant
+
+class A
+{
+  int a;
+  void setA(int a)
+  {
+    this.a=a;
+  }
+  int getA()
+  {
+    return a;
+  }
+}
+class B extends A
+{
+  int b;
+  void setB(int b)
+  {
+  this.b=b;
+  }
+  int getB()
+  {
+    return b;
+  }
+}
+class C extends B
+{
+  int c;
+  void setC(int c)
+  {
+    this.c=c;
+  }
+  int getC()
+  {
+    return c;
+  }
+  void show()
+  {
+    System.out.println("addition:"+(a+b+c));
+  }
+}
+public class Ab
+{
+  public static void main(String[] args)
+  {
+C k=new C();
+k.setA(5);
+k.setB(7);
+k.setC(6);
+int m=k.getA();
+int n=k.getB();
+int o=k.getC();
+k.show();
+  }
+}
+---------------------------------------------------------------------------------------------
+threee number addition (getter setter method ) 
+constant
+
+class A
+{
+  int a;
+  void setA(int a)
+  {
+    this.a=a;
+  }
+  int getA()
+  {
+    return a;
+  }
+}
+class B extends A
+{
+  int b;
+  void setB(int b)
+  {
+  this.b=b;
+  }
+  int getB()
+  {
+    return b;
+  }
+}
+class C extends B
+{
+  int c;
+  void setC(int c)
+  {
+    this.c=c;
+  }
+  int getC()
+  {
+    return c;
+  }
+  void show()
+  {
+    System.out.println("subtraction:"+(a-b-c));
+  }
+}
+public class Ab
+{
+  public static void main(String[] args)
+  {
+C k=new C();
+k.setA(25);
+k.setB(7);
+k.setC(6);
+int m=k.getA();
+int n=k.getB();
+int o=k.getC();
+k.show();
+  }
+}
+---------------------------------------------------------------------------------------------------
+threee number multiplication (getter setter method ) 
+constant
+
+class A
+{
+  int a;
+  void setA(int a)
+  {
+    this.a=a;
+  }
+  int getA()
+  {
+    return a;
+  }
+}
+class B extends A
+{
+  int b;
+  void setB(int b)
+  {
+  this.b=b;
+  }
+  int getB()
+  {
+    return b;
+  }
+}
+class C extends B
+{
+  int c;
+  void setC(int c)
+  {
+    this.c=c;
+  }
+  int getC()
+  {
+    return c;
+  }
+  void show()
+  {
+    System.out.println("multiplication:"+(a*b+*c));
+  }
+}
+public class Ab
+{
+  public static void main(String[] args)
+  {
+C k=new C();
+k.setA(5);
+k.setB(8);
+k.setC(6);
+int m=k.getA();
+int n=k.getB();
+int o=k.getC();
+k.show();
+  }
+}
+-------------------------------------------------------------------------------------------------
+threee number division (getter setter method ) 
+constant
+
+class A
+{
+  int a;
+  void setA(int a)
+  {
+    this.a=a;
+  }
+  int getA()
+  {
+    return a;
+  }
+}
+class B extends A
+{
+  int b;
+  void setB(int b)
+  {
+  this.b=b;
+  }
+  int getB()
+  {
+    return b;
+  }
+}
+class C extends B
+{
+  int c;
+  void setC(int c)
+  {
+    this.c=c;
+  }
+  int getC()
+  {
+    return c;
+  }
+  void show()
+  {
+    System.out.println("division:"+(a/b/c));
+  }
+}
+public class Ab
+{
+  public static void main(String[] args)
+  {
+C k=new C();
+k.setA(5);
+k.setB(7);
+k.setC(6);
+int m=k.getA();
+int n=k.getB();
+int o=k.getC();
+k.show();
+  }
+}
+------------------------------------------------------------------------------------------------
+threee number modular (getter setter method ) 
+constant
+class A
+{
+  int a;
+  void setA(int a)
+  {
+    this.a=a;
+  }
+  int getA()
+  {
+    return a;
+  }
+}
+class B extends A
+{
+  int b;
+  void setB(int b)
+  {
+  this.b=b;
+  }
+  int getB()
+  {
+    return b;
+  }
+}
+class C extends B
+{
+  int c;
+  void setC(int c)
+  {
+    this.c=c;
+  }
+  int getC()
+  {
+    return c;
+  }
+  void show()
+  {
+    System.out.println("modular:"+(a%b%c));
+  }
+}
+public class Ab
+{
+  public static void main(String[] args)
+  {
+C k=new C();
+k.setA(5);
+k.setB(7);
+k.setC(6);
+int m=k.getA();
+int n=k.getB();
+int o=k.getC();
+k.show();
+  }
+}
+----------------------------------------------------------------------------------------------
+1)single level 
+threee number addition (getter setter method ) 
+user input 
+
+import java.util.*;
+class A
+{
+  int a;
+  void setA(int a)
+  {
+    this.a=a;
+  }
+  int getA()
+  {
+    return a;
+  }
+}
+class B extends A
+{
+  int b;
+  void setB(int b)
+  {
+    this.b=b;
+  }
+  int getB()
+  {
+    return b;
+  }
+}
+class C extends B{
+  int c;
+  void setC(int c)
+  {
+    this.c=c;
+  }
+  int getC()
+  {
+    return c;
+  }
+  void show()
+  {
+    System.out.println("addition:"+(a+b+c));
+  }
+}
+public class Ab
+{
+  public static void main(String[] args)
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter the value of a:");
+    int a=sc.nextInt();
+    System.out.println("enter the value of b:");
+    int b=sc.nextInt();
+    System.out.println("enter the value of c:");
+    int c=sc.nextInt();
+C k=new C();
+k.setA(a);
+k.setB(b);
+k.setC(c);
+int m=k.getA();
+int n=k.getB();
+int o=k.getC();
+k.show();
+  }
+}
+----------------------------------------------------------------------------------------
+threee number subtraction (getter setter method ) 
+user input
+
+import java.util.*;
+class A
+{
+  int a;
+  void setA(int a)
+  {
+ this.a=a;
+  }
+  int getA()
+  {
+    return a;
+  }
+}
+class B extends A
+{
+  int b;
+  void setB(int b)
+  {
+    this.b=b;
+  }
+  int getB()
+  {
+    return b;
+  }
+}
+class C extends B{
+  int c;
+  void setC(int c)
+  {
+    this.c=c;
+  }
+  int getC()
+  {
+    return c;
+  }
+  void show()
+  {
+    System.out.println("subtraction:"+(a-b-c));
+  }
+}
+public class Ab
+{
+  public static void main(String[] args)
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter the value of a:");
+    int a=sc.nextInt();
+    System.out.println("enter the value of b:");
+    int b=sc.nextInt();
+    System.out.println("enter the value of c:");
+    int c=sc.nextInt();
+C k=new C();
+k.setA(a);
+k.setB(b);
+k.setC(c);
+int m=k.getA();
+int n=k.getB();
+int o=k.getC();
+k.show();
+  }
+}
+---------------------------------------------------------------------------------------
+threee number multiplication (getter setter method ) 
+user input
+
+import java.util.*;
+class A
+{
+  int a;
+  void setA(int a)
+  {
+    this.a=a;
+  }
+  int getA()
+  {
+    return a;
+  }
+}
+class B extends A
+{
+  int b;
+  void setB(int b)
+  {
+    this.b=b;
+  }
+  int getB()
+  {
+    return b;
+  }
+}
+class C extends B{
+  int c;
+  void setC(int c)
+  {
+    this.c=c;
+  }
+  int getC()
+  {
+    return c;
+  }
+  void show()
+  {
+    System.out.println("multiplication:"+(a*b*c));
+  }
+}
+public class Ab
+{
+  public static void main(String[] args)
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter the value of a:");
+    int a=sc.nextInt();
+    System.out.println("enter the value of b:");
+    int b=sc.nextInt();
+    System.out.println("enter the value of c:");
+    int c=sc.nextInt();
+C k=new C();
+k.setA(a);
+k.setB(b);
+k.setC(c);
+int m=k.getA();
+int n=k.getB();
+int o=k.getC();
+k.show();
+  }
+}
+---------------------------------------------------------------------------------------------
+threee number division (getter setter method ) 
+user input
+import java.util.*;
+class A
+{
+  int a;
+  void setA(int a)
+  {
+    this.a=a;
+  }
+  int getA()
+  {
+    return a;
+  }
+}
+class B extends A
+{
+  int b;
+  void setB(int b)
+  {
+    this.b=b;
+  }
+  int getB()
+  {
+    return b;
+  }
+}
+class C extends B{
+  int c;
+  void setC(int c)
+  {
+    this.c=c;
+  }
+  int getC()
+  {
+    return c;
+  }
+  void show()
+  {
+    System.out.println("division:"+(a/b/c));
+  }
+}
+public class Ab
+{
+  public static void main(String[] args)
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter the value of a:");
+    int a=sc.nextInt();
+    System.out.println("enter the value of b:");
+    int b=sc.nextInt();
+    System.out.println("enter the value of c:");
+    int c=sc.nextInt();
+C k=new C();
+k.setA(a);
+k.setB(b);
+k.setC(c);
+int m=k.getA();
+int n=k.getB();
+int o=k.getC();
+k.show();
+  }
+}
+-------------------------------------------------------------------------------------------
+threee number modular (getter setter method ) 
+user input
+
+import java.util.*;
+class A
+{
+  int a;
+  void setA(int a)
+  {
+    this.a=a;
+  }
+  int getA()
+  {
+    return a;
+  }
+}
+class B extends A
+{
+  int b;
+  void setB(int b)
+  {
+    this.b=b;
+  }
+  int getB()
+  {
+    return b;
+  }
+}
+class C extends B{
+  int c;
+  void setC(int c)
+  {
+    this.c=c;
+  }
+  int getC()
+  {
+    return c;
+  }
+  void show()
+  {
+    System.out.println("modular:"+(a%b%c));
+  }
+}
+public class Ab
+{
+  public static void main(String[] args)
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter the value of a:");
+    int a=sc.nextInt();
+    System.out.println("enter the value of b:");
+    int b=sc.nextInt();
+    System.out.println("enter the value of c:");
+    int c=sc.nextInt();
+C k=new C();
+k.setA(a);
+k.setB(b);
+k.setC(c);
+int m=k.getA();
+int n=k.getB();
+int o=k.getC();
+k.show();
+  }
+}
+---------------------------------------------------------------------------------------------
+============================================================================= single level inheretance================================================================
+
+
+class A{
+    int a;
+    void setA(int a)
+    {
+        this.a=a;
+    }
+    int getA()  
+    {
+        return a;
+    }
+}
+class B extends A{
+    int b;
+    void setB(int b)
+    {
+        this.b=b;
+    }
+    int getB()
+    {
+        return b;
+    }
+    void show()
+    {
+        System.out.println(a+b);
+    }
+}
+public class AccessModifer{
+    public static void main(String[] args)
+    {
+        B k=new B();
+        k.setA(1);
+        k.setB(1);
+        k.getA();
+        k.getB();
+        k.show();
+    }
+}
+===============================================================================================
+
+class A{
+    int a;
+    void setA(int a)
+    {
+        this.a=a;
+    }
+    int getA()  
+    {
+        return a;
+    }
+}
+class B extends A{
+    int b;
+    void setB(int b)
+    {
+        this.b=b;
+    }
+    int getB()
+    {
+        return b;
+    }
+    void show()
+    {
+        System.out.println(a-b);
+    }
+}
+public class AccessModifer{
+    public static void main(String[] args)
+    {
+        B k=new B();
+        k.setA(1);
+        k.setB(1);
+        k.getA();
+        k.getB();
+        k.show();
+    }
+}
+==============================================================================================
+
+class A{
+    int a;
+    void setA(int a)
+    {
+        this.a=a;
+    }
+    int getA()  
+    {
+        return a;
+    }
+}
+class B extends A{
+    int b;
+    void setB(int b)
+    {
+        this.b=b;
+    }
+    int getB()
+    {
+        return b;
+    }
+    void show()
+    {
+        System.out.println(a/b);
+    }
+}
+public class AccessModifer{
+    public static void main(String[] args)
+    {
+        B k=new B();
+        k.setA(1);
+        k.setB(1);
+        k.getA();
+        k.getB();
+        k.show();
+    }
+}=======================================================================================
+
+class A{
+    int a;
+    void setA(int a)
+    {
+        this.a=a;
+    }
+    int getA()  
+    {
+        return a;
+    }
+}
+class B extends A{
+    int b;
+    void setB(int b)
+    {
+        this.b=b;
+    }
+    int getB()
+    {
+        return b;
+    }
+    void show()
+    {
+        System.out.println(a%b);
+    }
+}
+public class AccessModifer{
+    public static void main(String[] args)
+    {
+        B k=new B();
+        k.setA(1);
+        k.setB(1);
+        k.getA();
+        k.getB();
+        k.show();
+    }
+}
+=========================================================================== USER INPUT ===================================================================
+import java.util.*;
+
+class A {
+    int a;
+
+    void setA(int a) {
+        this.a = a;
+    }
+
+    int getA() {
+        return a;
+    }
+}
+
+class B extends A {
+    int b;
+
+    void setB(int b) {
+        this.b = b;
+    }
+
+    int getB() {
+        return b;
+    }
+
+    void show() {
+        System.out.println(a + b);
+    }
+}
+
+public class AccessModifer {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a value: ");
+        int a = sc.nextInt();
+        System.out.println("Enter b value: ");
+        int b = sc.nextInt();
+        B k = new B();
+        k.setA(a);
+        k.setB(b);
+        k.getA();
+        k.getB();
+        k.show();
+    }
+}
+==========================================================================================
+import java.util.*;
+
+class A {
+    int a;
+
+    void setA(int a) {
+        this.a = a;
+    }
+
+    int getA() {
+        return a;
+    }
+}
+
+class B extends A {
+    int b;
+
+    void setB(int b) {
+        this.b = b;
+    }
+
+    int getB() {
+        return b;
+    }
+
+    void show() {
+        System.out.println(a - b);
+    }
+}
+
+public class AccessModifer {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a value: ");
+        int a = sc.nextInt();
+        System.out.println("Enter b value: ");
+        int b = sc.nextInt();
+        B k = new B();
+        k.setA(a);
+        k.setB(b);
+        k.getA();
+        k.getB();
+        k.show();
+    }
+}
+===================================================================================
+import java.util.*;
+
+class A {
+    int a;
+
+    void setA(int a) {
+        this.a = a;
+    }
+
+    int getA() {
+        return a;
+    }
+}
+
+class B extends A {
+    int b;
+
+    void setB(int b) {
+        this.b = b;
+    }
+
+    int getB() {
+        return b;
+    }
+
+    void show() {
+        System.out.println(a / b);
+    }
+}
+
+public class AccessModifer {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a value: ");
+        int a = sc.nextInt();
+        System.out.println("Enter b value: ");
+        int b = sc.nextInt();
+        B k = new B();
+        k.setA(a);
+        k.setB(b);
+        k.getA();
+        k.getB();
+        k.show();
+    }
+}
+===================================================================================
+import java.util.*;
+
+class A {
+    int a;
+
+    void setA(int a) {
+        this.a = a;
+    }
+
+    int getA() {
+        return a;
+    }
+}
+
+class B extends A {
+    int b;
+
+    void setB(int b) {
+        this.b = b;
+    }
+
+    int getB() {
+        return b;
+    }
+
+    void show() {
+        System.out.println(a % b);
+    }
+}
+
+public class AccessModifer {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a value: ");
+        int a = sc.nextInt();
+        System.out.println("Enter b value: ");
+        int b = sc.nextInt();
+        B k = new B();
+        k.setA(a);
+        k.setB(b);
+        k.getA();
+        k.getB();
+        k.show();
+    }
+}
+================================================================================================================================================================
+================================================================================================================================================================
+=================================================================================================================================================================
+class A 
+instance variable public 
+class B exnted A 
+instance variable private 
+---------------------------------------------------------
+
+class A {
+    public int a;
+
+    void show1(int a) {
+        this.a = a;
+    }
+}
+
+class B extends A {
+    private int b;
+
+    void show2(int b) {
+        this.b = b;
+    }
+
+    void sum() {
+        System.out.println(a + b);
+    }
+}
+
+public class Prectice {
+    public static void main(String[] args) {
+        B k = new B();
+        k.show1(1);
+        k.show2(3);
+        k.sum();
+    }
+}
+=========================================================================================================
+class A 
+instance variable public 
+class B exnted A 
+instance variable public 
+-------------------------------------
+
+class A {
+    public int a;
+
+    void show1(int a) {
+        this.a = a;
+    }
+}
+
+class B extends A {
+    public int b;
+
+    void show2(int b) {
+        this.b = b;
+    }
+
+    void sum() {
+        System.out.println(a + b);
+    }
+}
+
+public class Prectice {
+    public static void main(String[] args) {
+        B k = new B();
+        k.show1(1);
+        k.show2(3);
+        k.sum();
+    }
+}
+=================================================================================================
+class A 
+instance variable public 
+class B exnted A 
+instance variable protected 
+---------------------------------------
+
+class Parent {
+    public int a;
+
+    void show1(int a) {
+        this.a = a;
+    }
+}
+
+class Child extends Parent {
+    protected int b;
+
+    void show2(int b) {
+        this.b = b;
+    }
+
+    void sum() {
+        System.out.println(a + b);
+    }
+}
+
+public class Prectice {
+    public static void main(String[] args) {
+        Child k = new Child();
+        k.show1(1);
+        k.show2(3);
+        k.sum();
+    }
+}
+==========================================================================================
+class A 
+instance variable public 
+class B exnted A 
+instance variable default
+------------------------------------------
+
+class Parent {
+    public int a;
+
+    void show1(int a) {
+        this.a = a;
+    }
+}
+
+class Child extends Parent {
+     int b;
+
+    void show2(int b) {
+        this.b = b;
+    }
+
+    void sum() {
+        System.out.println(a + b);
+    }
+}
+
+public class Prectice {
+    public static void main(String[] args) {
+        Child k = new Child();
+        k.show1(1);
+        k.show2(3);
+        k.sum();
+    }
+}                                                               
+=====================================================================================================================
+class A 
+instance variable private 
+class B exnted A 
+instance variable default
+-------------------------------
+
+class Parent {
+    private int a;
+
+    void show1(int a) {
+        this.a = a;
+    }
+}
+
+class Child extends Parent {
+     int b;
+
+    void show2(int b) {
+        this.b = b;
+    }
+
+    void sum() {
+        System.out.println(a + b);
+    }
+}
+
+public class Prectice {
+    public static void main(String[] args) {
+        Child k = new Child();
+        k.show1(1);
+        k.show2(3);
+        k.sum();
+    }
+}
+
+                                                       output :- Error
+======================================================================================================
+
+class A 
+instance variable private 
+class B exnted A 
+instance variable private
+-------------------------------
+
+class Parent {
+    private int a;
+
+    void show1(int a) {
+        this.a = a;
+    }
+}
+
+class Child extends Parent {
+    private int b;
+
+    void show2(int b) {
+        this.b = b;
+    }
+
+    void sum() {
+        System.out.println(a + b);
+    }
+}
+
+public class Prectice {
+    public static void main(String[] args) {
+        Child k = new Child();
+        k.show1(1);
+        k.show2(3);
+        k.sum();
+    }
+}
+                                                       output :- Error
+======================================================================================================
+class A 
+instance variable private 
+class B exnted A 
+instance variable public
+-------------------------------
+
+class Parent {
+    private int a;
+
+    void show1(int a) {
+        this.a = a;
+    }
+}
+
+class Child extends Parent {
+    public int b;
+
+    void show2(int b) {
+        this.b = b;
+    }
+
+    void sum() {
+        System.out.println(a + b);
+    }
+}
+
+public class Prectice {
+    public static void main(String[] args) {
+        Child k = new Child();
+        k.show1(1);
+        k.show2(3);
+        k.sum();
+    }
+}
+                                                       output :- Error
+======================================================================================================
+class A 
+instance variable private 
+class B exnted A 
+instance variable protected 
+-------------------------------
+
+class Parent {
+    private int a;
+
+    void show1(int a) {
+        this.a = a;
+    }
+}
+
+class Child extends Parent {
+    protected int b;
+
+    void show2(int b) {
+        this.b = b;
+    }
+
+    void sum() {
+        System.out.println(a + b);
+    }
+}
+
+public class Prectice {
+    public static void main(String[] args) {
+        Child k = new Child();
+        k.show1(1);
+        k.show2(3);
+        k.sum();
+    }
+}
+                                                       output :- Error
+======================================================================================================
+class A 
+instance variable default 
+class B exnted A 
+instance variable protected 
+-------------------------------
+
+class Parent {
+     int a;
+
+    void show1(int a) {
+        this.a = a;
+    }
+}
+
+class Child extends Parent {
+    protected int b;
+
+    void show2(int b) {
+        this.b = b;
+    }
+
+    void sum() {
+        System.out.println(a + b);
+    }
+}
+
+public class Prectice {
+    public static void main(String[] args) {
+        Child k = new Child();
+        k.show1(1);
+        k.show2(3);
+        k.sum();
+    }
+}
+                                                         
+======================================================================================================
+class A 
+instance variable default 
+class B exnted A 
+instance variable private 
+-------------------------------
+
+class Parent {
+     int a;
+
+    void show1(int a) {
+        this.a = a;
+    }
+}
+
+class Child extends Parent {
+    private int b;
+
+    void show2(int b) {
+        this.b = b;
+    }
+
+    void sum() {
+        System.out.println(a + b);
+    }
+}
+
+public class Prectice {
+    public static void main(String[] args) {
+        Child k = new Child();
+        k.show1(1);
+        k.show2(3);
+        k.sum();
+    }
+}
+                                                        
+======================================================================================================
+class A 
+instance variable default 
+class B exnted A 
+instance variable public 
+-------------------------------
+
+class Parent {
+     int a;
+
+    void show1(int a) {
+        this.a = a;
+    }
+}
+
+class Child extends Parent {
+    public int b;
+
+    void show2(int b) {
+        this.b = b;
+    }
+
+    void sum() {
+        System.out.println(a + b);
+    }
+}
+
+public class Prectice {
+    public static void main(String[] args) {
+        Child k = new Child();
+        k.show1(1);
+        k.show2(3);
+        k.sum();
+    }
+}
+                                                         
+======================================================================================================
+class A 
+instance variable default 
+class B exnted A 
+instance variable default 
+-------------------------------
+
+class Parent {
+     int a;
+
+    void show1(int a) {
+        this.a = a;
+    }
+}
+
+class Child extends Parent {
+     int b;
+
+    void show2(int b) {
+        this.b = b;
+    }
+
+    void sum() {
+        System.out.println(a + b);
+    }
+}
+
+public class Prectice {
+    public static void main(String[] args) {
+        Child k = new Child();
+        k.show1(1);
+        k.show2(3);
+        k.sum();
+    }
+}
+                                                      
+======================================================================================================
+class A 
+instance variable protected 
+class B exnted A 
+instance variable private 
+-------------------------------
+
+class Parent {
+    protected int a;
+
+    void show1(int a) {
+        this.a = a;
+    }
+}
+
+class Child extends Parent {
+    private int b;
+
+    void show2(int b) {
+        this.b = b;
+    }
+
+    void sum() {
+        System.out.println(a + b);
+    }
+}
+
+public class Prectice {
+    public static void main(String[] args) {
+        Child k = new Child();
+        k.show1(1);
+        k.show2(3);
+        k.sum();
+    }
+}
+======================================================================================================
+class A 
+instance variable protected 
+class B exnted A 
+instance variable public
+-------------------------------
+
+class Parent {
+    protected int a;
+
+    void show1(int a) {
+        this.a = a;
+    }
+}
+
+class Child extends Parent {
+    pubic int b;
+
+    void show2(int b) {
+        this.b = b;
+    }
+
+    void sum() {
+        System.out.println(a + b);
+    }
+}
+
+public class Prectice {
+    public static void main(String[] args) {
+        Child k = new Child();
+        k.show1(1);
+        k.show2(3);
+        k.sum();
+    }
+}
+======================================================================================================
+class A 
+instance variable protected 
+class B exnted A 
+instance variable default 
+-------------------------------
+
+class Parent {
+    protected int a;
+
+    void show1(int a) {
+        this.a = a;
+    }
+}
+
+class Child extends Parent {
+     int b;
+
+    void show2(int b) {
+        this.b = b;
+    }
+
+    void sum() {
+        System.out.println(a + b);
+    }
+}
+
+public class Prectice {
+    public static void main(String[] args) {
+        Child k = new Child();
+        k.show1(1);
+        k.show2(3);
+        k.sum();
+    }
+}
+
+                                                         
+======================================================================================================
+class A 
+instance variable protected 
+class B exnted A 
+instance variable protected
+-------------------------------
+
+class Parent {
+    protected int a;
+
+    void show1(int a) {
+        this.a = a;
+    }
+}
+
+class Child extends Parent {
+    protected int b;
+
+    void show2(int b) {
+        this.b = b;
+    }
+
+    void sum() {
+        System.out.println(a + b);
+    }
+}
+
+public class Prectice {
+    public static void main(String[] args) {
+        Child k = new Child();
+        k.show1(1);
+        k.show2(3);
+        k.sum();
+    }
+}
+======================================================================================================-===================================================================
+class A 
+->method () addition 
+->paramterised() addition
+
+class B exted A 
+->method () sub
+->paramterised() sub
+c B 
+
+->method () mul
+->paramterised() mul
+D C 
+
+->method () div
+->paramterised() div 
+
+E D 
+->method () mod 
+->paramterised() mod 
+
+constant 
+user input 
+
+
+class A {
+int a,b;
+    void show(int a,int b) {
+        this.a=a;
+        this.b=b;
+        System.out.println(a + b);
+    }
+}
+
+class B extends A {
+  int a,b;
+    void show(int a,int b) {
+        this.a=a;
+        this.b=b;
+        System.out.println(a - b);
+    }
+}
+
+class C extends B {
+    int a,b;
+    void show(int a,int b) {
+        this.a=a;
+        this.b=b;
+        System.out.println(a / b);
+    }
+}
+
+class D extends C {
+    int a,b;
+    void show(int a,int b) {
+        this.a=a;
+        this.b=b;
+        System.out.println(a % b);
+    }
+}
+
+public class Prectice {
+    public static void main(String[] args) {
+        D k = new D();
+        k.show(2,3);
+        k.show2(2,4);
+        k.show3(2,5);
+        k.show4(1,8);
+    }
+}
+------------------------------------------------------------------------------------
+USER INPUT
+
+import java.util.*;
+
+class A {
+
+    int a, b;
+
+    void show(int a, int b) {
+        this.a = a;
+        this.b = b;
+        System.out.println(a + b);
+    }
+}
+
+class B extends A {
+    void show2(int a, int b) {
+        this.a = a;
+        this.b = b;
+        System.out.println(a - b);
+    }
+}
+
+class C extends B {
+    void show3(int a, int b) {
+        this.a = a;
+        this.b = b;
+        System.out.println(a / b);
+    }
+}
+
+class D extends C {
+    void show4(int a, int b) {
+        this.a = a;
+        this.b = b;
+        System.out.println(a % b);
+    }
+}
+
+public class Prectice {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int p = sc.nextInt();
+        int q = sc.nextInt();
+        D k = new D();
+        k.show(p, q);
+        k.show2(p, q);
+        k.show3(p, q);
+        k.show4(p, q);
+    }
+}
+

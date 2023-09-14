@@ -1,0 +1,196 @@
+
+1:
+Create a Java class named Person with private attributes name and age. 
+Provide a constructor to initialize these attributes and methods to get and set them.
+
+class Person {
+    private String name;
+    private int age;
+
+    void setName(String name) {
+        this.name = name;
+
+    }
+
+    String getName() {
+        return name;
+    }
+
+    void setAge(int age)
+    {
+        this.age=age;
+    }
+    int getAge()
+    {
+        return age;
+    }
+
+    Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+        System.out.println(name);
+        System.out.println(age);
+    }
+
+    void show()
+    {
+        System.out.println(name);
+        System.out.println(age);
+      
+    }
+}
+
+public class opps {
+    public static void main(String[] args) {
+        Person k = new Person("Hr",23);
+        k.getAge();
+        k.getName();
+        k.setAge(45);
+        k.setName("Ram");
+        k.show();
+    }
+}
+
+
+2:
+Create a subclass Student that extends the Person class. 
+Add a private attribute studentId and provide methods to get and set it.
+
+class Person{
+    private int studentId;
+
+    void set(int studentId)
+    {
+      this.studentId=studentId;
+    }
+
+    int get()
+    {
+        return studentId;
+    }
+
+    void show()
+    {
+        System.out.println(studentId);
+    }
+}
+
+class subclass extends Person{
+
+    
+}
+public class opps{
+    public static void main(String[] args) {
+        subclass k = new subclass();
+        k.get();
+        k.set(123);
+        k.show();
+    }
+}
+
+
+
+3):
+Create an interface Shape with a method calculateArea(). 
+Implement this interface with classes Circle and Rectangle.
+Area = π r 2
+
+import java.util.*;
+interface Shape{
+    default void calculateArea(){
+      Scanner sc = new Scanner(System.in);
+      System.out.println("enter radius of circle: ");
+      int r = sc.nextInt();
+      float pi = 3.14159f;
+
+      float circle = pi*r*r;
+      System.out.println("radius of circle: "+circle);
+    }
+}
+
+class Circle implements Shape{
+
+}
+public class opps{
+    public static void main(String[] args) {
+        Circle k = new Circle();
+        k.calculateArea();
+    }
+}
+
+
+4)
+// Create a class BankAccount with attributes accountNumber, balance, and owner. 
+// Add methods to deposit and withdraw funds.
+
+import java.util.*;
+
+class BankAccount {
+    Scanner sc = new Scanner(System.in);
+    String name = sc.nextLine();
+    int accountNumber = sc.nextInt();
+    int balance = sc.nextInt();
+    int amount = sc.nextInt();
+    int total = 0;
+
+    public void funds() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("deposite or withdrow");
+        String d = sc.nextLine();
+        if (d.equals("deposite")) {
+            total = amount + balance;
+        }
+        if (d.equals("withdrow")) {
+            total = amount - balance;
+        }
+    }
+
+    public void show() {
+        System.out.println("Name: " + name);
+        System.out.println("AccountNumber: " + accountNumber);
+        System.out.println("balance: " + balance);
+        System.out.println("total balance: " + total);
+    }
+}
+
+public class opps {
+    public static void main(String[] args) {
+        BankAccount b1 = new BankAccount();
+        b1.funds();
+        b1.show();
+    }
+}
+
+
+
+
+
+5)
+// Create an abstract class Animal with a method makeSound(). 
+// Create subclasses Dog and Cat that implement this method.
+
+abstract class Animal {
+    abstract public void makeSound();
+
+}
+
+class dog extends Animal {
+    public void makeSound() {
+        System.out.println("dog ");
+    }
+}
+
+class cat extends Animal {
+    public void makeSound() {
+        System.out.println("cat ");
+    }
+}
+
+public class opps {
+    public static void main(String[] args) {
+        dog d = new dog();
+        d.makeSound();
+        cat c = new cat();
+        c.makeSound();
+    }
+}

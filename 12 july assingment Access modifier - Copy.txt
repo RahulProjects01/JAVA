@@ -1,0 +1,977 @@
+===============================================================Access Modifer==================================================================================
+class public -------> method default
+class public-------> method public
+class public -----> method protected
+class public ---> method private
+
+class Parent {
+    public void show() {
+        System.out.println("I'm the parent.");
+    }
+}
+
+class Child extends Parent {
+    public void show() {
+        System.out.println("I'm the child.");
+    }
+}
+
+public class AccessModifer {
+    public static void main(String args[]) {
+        new Child().show();
+    }
+}
+
+                                                                    output - i am Child.
+
+===============================================================================
+class default-------> method public
+
+class Parent{
+    public void show(){
+        System.out.println("i am Parent");
+    }
+}
+class Child extends Parent{
+    public void show(){
+        System.out.println("I am Child");
+    }
+} 
+
+ public class AccessModifer{
+    public static void main(String[] args){
+        new Child().show();
+    }
+}
+
+output - i am Child.
+===========================================================================================
+class public -----> method protected
+
+class Parent{
+    protected void show(){
+        System.out.println("i am Parent");
+    }
+}
+class Child extends Parent{
+    protected void show(){
+        System.out.println("I am Child");
+    }
+} 
+
+ public class AccessModifer{
+    public static void main(String[] args){
+        new Child().show();
+    }
+}
+
+                                                                      output - i am Child.
+================================================================================
+ class public --- method private
+
+class Parent{
+    private void show(){
+        System.out.println("i am Parent");
+    }
+}
+class Child extends Parent{
+    private void show(){
+        System.out.println("I am Child");
+    }
+} 
+
+ public class AccessModifer{
+    public static void main(String[] args){
+        new Child().show();
+    }
+}
+
+                                                                     output - Error
+
+=================================================================================
+class default ---->method public 
+class default ---->method private 
+class default --->method protected 
+class default--->method default 
+--------------------------------------------------
+class default ---->method public 
+
+class Parant {
+    public void show() {
+        System.out.println("I am Parant");
+    }
+}
+
+class Child extends Parant {
+    public void show() {
+        System.out.println("I am Child");
+    }
+}
+
+class AccessModifer {
+    static void main(String[] args) {
+        new Child().show();
+    }
+}
+
+                                                               output:- Error
+
+=================================================================================== 
+class default ---->method private 
+
+class Parant {
+    private void show() {
+        System.out.println("I am Parant");
+    }
+}
+
+class Child extends Parant {
+    private void show() {
+        System.out.println("I am Child");
+    }
+}
+
+class AccessModifer {
+    public static void main(String[] args) {
+        new Child().show();
+    }
+}
+
+                                                                 output:- Error
+==================================================================================
+class default --->method protected 
+
+class Parant {
+    protected void show() {
+        System.out.println("I am Parant");
+    }
+}
+
+class Child extends Parant {
+    protected void show() {
+        System.out.println("I am Child");
+    }
+}
+
+class AccessModifer {
+    public static void main(String[] args) {
+        new Child().show();
+    }
+}
+
+                                                                    output:- I am child 
+
+====================================================================================
+class default--->method default 
+
+class Parant {
+    void show() {
+        System.out.println("I am Parant");
+    }
+}
+
+class Child extends Parant {
+    void show() {
+        System.out.println("I am Child");
+    }
+}
+
+class AccessModifer {
+    public static void main(String[] args) {
+        new Child().show();
+    }
+}
+
+                                                           output:- i am Child
+================================================================================
+class private---->method public 
+class private---->method private 
+class private--->method protected 
+class private--->method default 
+-----------------------------------------------------
+
+class private---->method public
+
+class Parant {
+    public void show() {
+        System.out.println("I am Parant");
+    }
+}
+
+class Child extends Parant {
+    public void show() {
+        System.out.println("I am Child");
+    }
+}
+
+private class AccessModifer {
+    public static void main(String[] args) {
+        new Child().show();
+    }
+}
+
+                                                             output :- Error
+================================================================================
+class private---->method private 
+
+class Parant {
+    private void show() {
+        System.out.println("I am Parant");
+    }
+}
+
+class Child extends Parant {
+   private void show() {
+        System.out.println("I am Child");
+    }
+}
+
+private class AccessModifer {
+    public static void main(String[] args) {
+        new Child().show();
+    }
+}
+                                                                      output:- Error
+==============================================================================
+class private--->method protected 
+
+class Parant {
+    protected void show() {
+        System.out.println("I am Parant");
+    }
+}
+
+class Child extends Parant {
+   protected  void show() {
+        System.out.println("I am Child");
+    }
+}
+
+private class AccessModifer {
+    public static void main(String[] args) {
+        new Child().show();
+    }
+}
+
+                                                                  output:- Error
+====================================================================================
+class private--->method default 
+
+class Parant {
+    void show() {
+        System.out.println("I am Parant");
+    }
+}
+
+class Child extends Parant {
+    void show() {
+        System.out.println("I am Child");
+    }
+}
+
+private class AccessModifer {
+    public static void main(String[] args) {
+        new Child().show();
+    }
+}
+
+                                                           output:- Error 
+
+==================================================================================
+class protected------->method public 
+class protected-------->method private 
+class protected------->method protected 
+class protected---->method default
+--------------------------------------------
+-----------------------------------------------------------------------class protected------->method public 
+
+class Parant {
+    public void show() {
+        System.out.println("I am Parant");
+    }
+}
+
+class Child extends Parant {
+    public void show() {
+        System.out.println("I am Child");
+    }
+}
+
+protected class AccessModifer {
+    public static void main(String[] args) {
+        new Child().show();
+    }
+}
+
+                                                          output:- Error 
+==============================================================================
+------------------------------------------------------------------------------class protected-------->method private 
+
+class Parant {
+    void show() {
+        System.out.println("I am Parant");
+    }
+}
+
+class Child extends Parant {
+    void show() {
+        System.out.println("I am Child");
+    }
+}
+
+protected class AccessModifer {
+    public static void main(String[] args) {
+        new Child().show();
+    }
+}
+
+                                                    output:- Error
+=============================================================================
+-----------------------------------------------------------------------class protected------->method protected 
+
+class Parant {
+    protected void show() {
+        System.out.println("I am Parant");
+    }
+}
+
+class Child extends Parant {
+    protected void show() {
+        System.out.println("I am Child");
+    }
+}
+
+protected class AccessModifer {
+    public static void main(String[] args) {
+        new Child().show();
+    }
+}
+
+                                                       output:- Error
+============================================================================
+-------------------------------------------------------------------------class protected---->method default
+
+class Parant {
+    default void show() {
+        System.out.println("I am Parant");
+    }
+}
+
+class Child extends Parant {
+    default void show() {
+        System.out.println("I am Child");
+    }
+}
+
+protected class AccessModifer {
+    public static void main(String[] args) {
+        new Child().show();
+    }
+}
+
+                                                    output:- Error
+=========================================================================two number addition (getter setter method ) =========================================================
+SETTER METHOD
+
+class A {
+    int a;
+
+    void setA(int a) {
+        this.a = a;
+    }
+}
+
+class B extends A {
+    int b;
+
+    void setB(int b) {
+        this.b = b;
+    }
+     void show() {
+        System.out.println("add: "+a + b);
+    }
+}
+
+
+
+public class AccessModifer {
+    public static void main(String[] args) {
+        B k = new B();
+        k.setA(1);
+        k.setB(1);
+        k.show();
+    }
+}
+==========================================================
+-----------------------------------------------------------user input Addition 
+import java.util.*;
+class A{
+    int a;
+    void  setA(int a)
+    {
+        this.a=a;
+    }
+}
+class B extends A{
+    int b;
+    void setB(int b)
+    {
+        this.b=b;
+    }
+    void show()
+    {
+        System.out.println(a+b);
+    }
+}
+
+public class AccessModifer{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("input value a : ");
+        int a = sc.nextInt();
+        System.out.print("input value b: ");
+        int b = sc.nextInt();
+         B k = new B();
+         k.setA(a);
+         k.setB(b);
+         k.show();
+    }
+}
+
+================================================================================
+class A {
+    int a;
+
+    void setA(int a) {
+        this.a = a;
+    }
+}
+
+class B extends A {
+    int b;
+
+    void setB(int b) {
+        this.b = b;
+    }
+     void show() {
+        System.out.println("sub: "+a - b);
+    }
+}
+
+
+
+public class AccessModifer {
+    public static void main(String[] args) {
+        B k = new B();
+        k.setA(1);
+        k.setB(1);
+        k.show();
+    }
+------------------------------------------user input sub-----------------------------------
+import java.util.*;
+class A{
+    int a;
+    void  setA(int a)
+    {
+        this.a=a;
+    }
+}
+class B extends A{
+    int b;
+    void setB(int b)
+    {
+        this.b=b;
+    }
+    void show()
+    {
+        System.out.println(a-b);
+    }
+}
+
+public class AccessModifer{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("input value a : ");
+        int a = sc.nextInt();
+        System.out.print("input value b: ");
+        int b = sc.nextInt();
+         B k = new B();
+         k.setA(a);
+         k.setB(b);
+         k.show();
+    }
+}
+=========================================================================================================================
+
+class A {
+    int a;
+
+    void setA(int a) {
+        this.a = a;
+    }
+}
+
+class B extends A {
+    int b;
+
+    void setB(int b) {
+        this.b = b;
+    }
+     void show() {
+        System.out.println("dev: "+a / b);
+    }
+}
+
+
+
+public class AccessModifer {
+    public static void main(String[] args) {
+        B k = new B();
+        k.setA(1);
+        k.setB(1);
+        k.show();
+    }
+------------------------------------------user input mul-----------------------------------
+import java.util.*;
+class A{
+    int a;
+    void  setA(int a)
+    {
+        this.a=a;
+    }
+}
+class B extends A{
+    int b;
+    void setB(int b)
+    {
+        this.b=b;
+    }
+    void show()
+    {
+        System.out.println(a/b);
+    }
+}
+
+public class AccessModifer{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("input value a : ");
+        int a = sc.nextInt();
+        System.out.print("input value b: ");
+        int b = sc.nextInt();
+         B k = new B();
+         k.setA(a);
+         k.setB(b);
+         k.show();
+    }
+}
+
+================================================================================
+class A {
+    int a;
+
+    void setA(int a) {
+        this.a = a;
+    }
+}
+
+class B extends A {
+    int b;
+
+    void setB(int b) {
+        this.b = b;
+    }
+     void show() {
+        System.out.println("sub: "+a % b);
+    }
+}
+
+
+
+public class AccessModifer {
+    public static void main(String[] args) {
+        B k = new B();
+        k.setA(1);
+        k.setB(1);
+        k.show();
+    }
+------------------------------------------user input mod-----------------------------------
+import java.util.*;
+class A{
+    int a;
+    void  setA(int a)
+    {
+        this.a=a;
+    }
+}
+class B extends A{
+    int b;
+    void setB(int b)
+    {
+        this.b=b;
+    }
+    void show()
+    {
+        System.out.println(a%b);
+    }
+}
+
+public class AccessModifer{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("input value a : ");
+        int a = sc.nextInt();
+        System.out.print("input value b: ");
+        int b = sc.nextInt();
+         B k = new B();
+         k.setA(a);
+         k.setB(b);
+         k.show();
+    }
+}
+
+================================================================== GATTER AND SETTER METHOD ==================================================================
+
+class A{
+    int a;
+    void setA(int a)
+    {
+        this.a=a;
+    }
+    int getA()  
+    {
+        return a;
+    }
+}
+class B extends A{
+    int b;
+    void setB(int b)
+    {
+        this.b=b;
+    }
+    int getB()
+    {
+        return b;
+    }
+    void show()
+    {
+        System.out.println(a+b);
+    }
+}
+public class AccessModifer{
+    public static void main(String[] args)
+    {
+        B k=new B();
+        k.setA(1);
+        k.setB(1);
+        k.getA();
+        k.getB();
+        k.show();
+    }
+}
+===============================================================================================
+
+class A{
+    int a;
+    void setA(int a)
+    {
+        this.a=a;
+    }
+    int getA()  
+    {
+        return a;
+    }
+}
+class B extends A{
+    int b;
+    void setB(int b)
+    {
+        this.b=b;
+    }
+    int getB()
+    {
+        return b;
+    }
+    void show()
+    {
+        System.out.println(a-b);
+    }
+}
+public class AccessModifer{
+    public static void main(String[] args)
+    {
+        B k=new B();
+        k.setA(1);
+        k.setB(1);
+        k.getA();
+        k.getB();
+        k.show();
+    }
+}
+==============================================================================================
+
+class A{
+    int a;
+    void setA(int a)
+    {
+        this.a=a;
+    }
+    int getA()  
+    {
+        return a;
+    }
+}
+class B extends A{
+    int b;
+    void setB(int b)
+    {
+        this.b=b;
+    }
+    int getB()
+    {
+        return b;
+    }
+    void show()
+    {
+        System.out.println(a/b);
+    }
+}
+public class AccessModifer{
+    public static void main(String[] args)
+    {
+        B k=new B();
+        k.setA(1);
+        k.setB(1);
+        k.getA();
+        k.getB();
+        k.show();
+    }
+}=======================================================================================
+
+class A{
+    int a;
+    void setA(int a)
+    {
+        this.a=a;
+    }
+    int getA()  
+    {
+        return a;
+    }
+}
+class B extends A{
+    int b;
+    void setB(int b)
+    {
+        this.b=b;
+    }
+    int getB()
+    {
+        return b;
+    }
+    void show()
+    {
+        System.out.println(a%b);
+    }
+}
+public class AccessModifer{
+    public static void main(String[] args)
+    {
+        B k=new B();
+        k.setA(1);
+        k.setB(1);
+        k.getA();
+        k.getB();
+        k.show();
+    }
+}
+=========================================================================== USER INPUT ===================================================================
+import java.util.*;
+
+class A {
+    int a;
+
+    void setA(int a) {
+        this.a = a;
+    }
+
+    int getA() {
+        return a;
+    }
+}
+
+class B extends A {
+    int b;
+
+    void setB(int b) {
+        this.b = b;
+    }
+
+    int getB() {
+        return b;
+    }
+
+    void show() {
+        System.out.println(a + b);
+    }
+}
+
+public class AccessModifer {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a value: ");
+        int a = sc.nextInt();
+        System.out.println("Enter b value: ");
+        int b = sc.nextInt();
+        B k = new B();
+        k.setA(a);
+        k.setB(b);
+        k.getA();
+        k.getB();
+        k.show();
+    }
+}
+==========================================================================================
+import java.util.*;
+
+class A {
+    int a;
+
+    void setA(int a) {
+        this.a = a;
+    }
+
+    int getA() {
+        return a;
+    }
+}
+
+class B extends A {
+    int b;
+
+    void setB(int b) {
+        this.b = b;
+    }
+
+    int getB() {
+        return b;
+    }
+
+    void show() {
+        System.out.println(a - b);
+    }
+}
+
+public class AccessModifer {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a value: ");
+        int a = sc.nextInt();
+        System.out.println("Enter b value: ");
+        int b = sc.nextInt();
+        B k = new B();
+        k.setA(a);
+        k.setB(b);
+        k.getA();
+        k.getB();
+        k.show();
+    }
+}
+===================================================================================
+import java.util.*;
+
+class A {
+    int a;
+
+    void setA(int a) {
+        this.a = a;
+    }
+
+    int getA() {
+        return a;
+    }
+}
+
+class B extends A {
+    int b;
+
+    void setB(int b) {
+        this.b = b;
+    }
+
+    int getB() {
+        return b;
+    }
+
+    void show() {
+        System.out.println(a / b);
+    }
+}
+
+public class AccessModifer {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a value: ");
+        int a = sc.nextInt();
+        System.out.println("Enter b value: ");
+        int b = sc.nextInt();
+        B k = new B();
+        k.setA(a);
+        k.setB(b);
+        k.getA();
+        k.getB();
+        k.show();
+    }
+}
+===================================================================================
+import java.util.*;
+
+class A {
+    int a;
+
+    void setA(int a) {
+        this.a = a;
+    }
+
+    int getA() {
+        return a;
+    }
+}
+
+class B extends A {
+    int b;
+
+    void setB(int b) {
+        this.b = b;
+    }
+
+    int getB() {
+        return b;
+    }
+
+    void show() {
+        System.out.println(a % b);
+    }
+}
+
+public class AccessModifer {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a value: ");
+        int a = sc.nextInt();
+        System.out.println("Enter b value: ");
+        int b = sc.nextInt();
+        B k = new B();
+        k.setA(a);
+        k.setB(b);
+        k.getA();
+        k.getB();
+        k.show();
+    }
+}
+================================================================================================================================================================
+

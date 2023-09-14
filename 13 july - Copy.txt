@@ -1,0 +1,1065 @@
+Q.1 ===================================== SINGLE LEVEL INHERETANCE===========================================
+
+class Parent {
+    void show() {
+        System.out.println("I am Parent");
+    }
+}
+
+class Child extends Parent {
+    void show1() {
+        System.out.println("I am child");
+    }
+}
+
+public class Prectice {
+    public static void main(String[] args) {
+        Child k = new Child();
+        k.show();
+        k.show1();
+    }
+}
+
+============================================================================
+Q.2
+
+class A {
+    int a, b;
+    void show(int a,int b) 
+    {
+        this.a=a;
+        this.b=b;
+    }
+}
+
+class B extends A {
+    int c,d;
+    void show1(int c,int d) {
+        this.c=c;
+        this.d=d;
+    }
+    void add()
+    {
+        System.out.println(a+b+c+d);
+    }
+}
+
+public class Prectice {
+    public static void main(String[] args) {
+        B k = new B();
+        k.show(2,3);
+        k.show1(4,5);
+        k.add();
+
+    }
+}
+==================================================================================
+UAER INPUT :- 
+
+import java.util.*;
+
+class A {
+    int a, b;
+
+    void show(int a, int b) {
+        this.a = a;
+        this.b = b;
+    }
+}
+
+class B extends A {
+    int c, d;
+
+    void show1(int c, int d) {
+        this.c = c;
+        this.d = d;
+    }
+
+    void add() {
+        System.out.println(a + b + c + d);
+    }
+}
+
+public class Prectice {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter value a: ");
+        int a = sc.nextInt();
+        System.out.print("Enter value b: ");
+        int b = sc.nextInt();
+        System.out.print("Enter value c: ");
+        int c = sc.nextInt();
+        System.out.print("Enter value d: ");
+        int d = sc.nextInt();
+        B k = new B();
+        k.show(a, b);
+        k.show1(c, d);
+        k.add();
+
+    }
+}
+================================================================================
+setter and gatter
+
+
+class A {
+    int a, b;
+
+    void setA(int a, int b) {
+        this.a = a;
+        this.b = b;
+    }
+
+    int getA() {
+        return a;
+    }
+
+    int getB() {
+        return b;
+    }
+}
+
+class B extends A {
+    int c;
+
+    void setB(int c) {
+        this.c = c;
+    }
+
+    void sum() {
+        System.out.println(a + b + c);
+    }
+}
+
+public class Prectice {
+    public static void main(String[] args) {
+
+        B k = new B();
+        k.setA(2, 3);
+        k.setB(4);
+        k.sum();
+
+    }
+}
+===================================================================================================
+USER INPUT
+
+import java.util.*;
+
+class A {
+    int a, b;
+
+    void setA(int a, int b) {
+        this.a = a;
+        this.b = b;
+    }
+
+    int getA() {
+        return a;
+    }
+
+    int getB() {
+        return b;
+    }
+}
+
+class B extends A {
+    int c;
+
+    void setB(int c) {
+        this.c = c;
+    }
+    void sum() {
+        System.out.println(a + b + c);
+    }
+}
+
+public class Prectice {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter valu a : ");
+        int a = sc.nextInt();
+        System.out.println("Enter valu b : ");
+        int b = sc.nextInt();
+        System.out.println("Enter valu b : ");
+        int c = sc.nextInt();
+
+        B k = new B();
+        k.setA(a, b);
+        k.setB(c);
+        k.sum();
+    }
+}
+==================================================================================================
+INSTANCE VARIABLE
+USER INPUT:- 
+
+import java.util.*;
+
+class A {
+    int a, b;
+
+    void add(int a, int b) {
+        this.a = a;
+        this.b = b;
+        System.out.println(a + b);
+    }
+
+    void sub(int a, int b) {
+        this.a = a;
+        this.b = b;
+        System.out.println(a - b);
+    }
+}
+
+class B extends A {
+    int a, b;
+
+    void dev(int a, int b) {
+        this.a = a;
+        this.b = b;
+        System.out.println(a / b);
+    }
+
+    void mol(int a, int b) {
+        this.a = a;
+        this.b = b;
+        System.out.println(a % b);
+    }
+}
+
+public class Prectice {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a value: ");
+        int a = sc.nextInt();
+        System.out.print("Enter b value: ");
+        int b = sc.nextInt();
+        System.out.print("Enter c value: ");
+        int c = sc.nextInt();
+        System.out.print("Enter d value: ");
+        int d = sc.nextInt();
+        System.out.print("Enter e value: ");
+        int e = sc.nextInt();
+        System.out.print("Enter f value: ");
+        int f = sc.nextInt();
+        System.out.print("Enter g value: ");
+        int g = sc.nextInt();
+        System.out.print("Enter h value: ");
+        int h = sc.nextInt();
+        B k = new B();
+        k.add(a, b);
+        k.sub(c, d);
+        k.mol(e, f);
+        k.dev(g, h);
+    }
+}
+===================================================================================
+Q.5  
+
+CONSTANT := 
+
+
+class A {
+    void add(int a,int b) {
+         System.out.println(a+b);
+    }
+    void sub(int a,int b) {
+         System.out.println(a-b);
+    }
+}
+
+class B extends A {
+    void dev(int a,int b) {
+         System.out.println(a/b);
+    }
+    void mul(int a,int b) {
+         System.out.println(a%b);
+    }
+}
+
+public class Prectice {
+    public static void main(String[] args) {
+        B k = new B();
+        k.add(2,3);
+        k.sub(2,3);
+        k.mul(4,5);
+        k.dev(3,4);
+    }
+}
+==============================================================================
+USER INPUT :- 
+
+import java.util.*;
+class A {
+    void add(int a,int b) {
+         System.out.println(a+b);
+    }
+    void sub(int a,int b) {
+         System.out.println(a-b);
+    }
+}
+
+class B extends A {
+    void dev(int a,int b) {
+         System.out.println(a/b);
+    }
+    void mul(int a,int b) {
+         System.out.println(a%b);
+    }
+}
+
+public class Prectice {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter value a; ");
+        int a = sc.nextInt();
+        System.out.print("Enter value b: ");
+        int b = sc.nextInt();
+        B k = new B();
+        k.add(a,b);
+        k.sub(a,b);
+        k.mul(a,b);
+        k.dev(a,b);
+    }
+}
+===============================================================================
+----------------------------------------------MULTILEVEL INHERETANCE :- ----------------------------------------------------------------
+Q.1 
+
+class BMW {
+    void tyreasBMW() {
+        System.out.println("tyres of BMW");
+    }
+
+    void engneBMW() {
+        System.out.println("engne of BMW");
+    }
+}
+
+class Audi extends BMW {
+    void tyreasAudi() {
+        System.out.println("tyres of AUDI");
+    }
+
+    void engneAudi() {
+        System.out.println("engne of AUDI");
+    }
+}
+
+class Bugati extends Audi {
+    void tyreasBugati() {
+        System.out.println("tyres of BUGATI");
+    }
+
+    void engneBugati() {
+        System.out.println("engne of BUGATI");
+    }
+}
+
+public class Prectice {
+    public static void main(String[] args) {
+
+        Bugati k = new Bugati();
+        k.tyreasBMW();
+        k.tyreasAudi();
+        k.tyreasBugati();
+        k.engneAudi();
+        k.engneBugati();
+        k.engneBMW();
+
+    }
+}
+=====================================================
+Q.2 
+
+class A {
+    void show1(int a, int b) {
+        System.out.println(a + b);
+    }
+}
+
+class B extends A {
+    void show2(int a, int b) {
+        System.out.println(a + b);
+    }
+}
+
+class C extends B {
+    void show3(int a, int b) {
+        System.out.println(a + b);
+    }
+}
+
+public class Prectice {
+    public static void main(String[] args) {
+        C k = new C();
+        k.show1(2, 3);
+        k.show2(3, 4);
+        k.show3(5, 6);
+    }
+}
+
+=============================================================
+USER INPUT:-
+
+import java.util.*;
+
+class A {
+    void show1(int a, int b) {
+        System.out.println(a + b);
+    }
+}
+
+class B extends A {
+    void show2(int a, int b) {
+        System.out.println(a + b);
+    }
+}
+
+class C extends B {
+    void show3(int a, int b) {
+        System.out.println(a + b);
+    }
+}
+
+public class Prectice {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a value: ");
+        int a = sc.nextInt();
+        System.out.print("Enter b value: ");
+        int b = sc.nextInt();
+        C k = new C();
+        k.show1(a, b);
+        k.show2(a, b);
+        k.show3(a, b);
+    }
+}
+==============================================================================
+Q.3
+
+class A {
+  int a = 10, b = 15;
+
+  void show1() {
+    System.out.println(a + b);
+  }
+}
+
+class B extends A {
+  int c = 5, d = 10;
+
+  void show2() {
+    System.out.println(c + d);
+  }
+}
+
+class C extends B {
+  int e = 19, f = 12;
+
+  void show3() {
+    System.out.println(e + f);
+  }
+
+  void sum() {
+    System.out.println(a + b + c + d + e + f);
+  }
+}
+
+public class Prectice {
+  public static void main(String[] args) {
+    C k = new C();
+    k.show1();
+    k.show2();
+    k.show3();
+    k.sum();
+  }
+}
+============================================================================================
+USER INPUT :-
+
+import java.util.*;
+
+class A {
+  Scanner sc = new Scanner(System.in);
+  int a = sc.nextInt();
+  int b = sc.nextInt();
+
+  void show1() {
+    System.out.println(a + b);
+  }
+}
+
+class B extends A {
+  Scanner sc = new Scanner(System.in);
+  int c = sc.nextInt();
+  int d = sc.nextInt();
+
+  void show2() {
+    System.out.println(c + d);
+  }
+}
+
+class C extends B {
+  Scanner sc = new Scanner(System.in);
+  int e = sc.nextInt();
+  int f = sc.nextInt();
+
+  void show3() {
+    System.out.println(e + f);
+  }
+
+  void sum() {
+    System.out.println(a + b + c + d + e + f);
+  }
+}
+
+public class Prectice {
+  public static void main(String[] args) {
+    C k = new C();
+    k.show1();
+    k.show2();
+    k.show3();
+    k.sum();
+  }
+}
+==================================================================================================================
+Q.4
+
+class A {
+  int a, b;
+  void show1(int a, int b) 
+  {
+      this.a=a;
+      this.b=b;
+    System.out.println(a + b);
+  }
+
+  int f = 22, j = 12;
+  void show2() 
+  {
+    System.out.println(f - j);
+  }
+}
+
+class B extends A {
+  int k, l;
+
+  void show3(int k, int l) 
+  {
+      this.k=k;
+      this.l=l;
+    System.out.println(k / l);
+  }
+
+  int u = 10, i = 13;
+
+  void show4() 
+  {
+    System.out.println(u % i);
+  }
+}
+
+class C extends B {
+  int t, y;
+
+  void show5(int t, int y) {
+      this.t=t;
+      this.y=y;
+    System.out.println(t + y);
+  }
+
+  int c = 11, d = 10;
+
+  void show6() {
+    System.out.println(c + d);
+  }
+
+  void sum() {
+    System.out.println("sum: "+a + b + t + y);
+  }
+}
+
+public class Prectice {
+  public static void main(String[] args) {
+    C k = new C();
+    k.show1(2, 4);
+    k.show2();
+    k.show3(2, 6);
+    k.show4();
+    k.show5(2, 4);
+    k.show6();
+    k.sum();
+  }
+}
+===============================================================================================
+USER INPUT  
+
+import java.util.*;
+
+class A {
+  void show1() {
+    Scanner sc = new Scanner(System.in);
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+    System.out.println(a + b);
+  }
+
+  void show2() {
+    Scanner sc = new Scanner(System.in);
+    int f = sc.nextInt();
+    int j = sc.nextInt();
+    System.out.println(f - j);
+  }
+}
+
+class B extends A {
+
+  void show3() {
+    Scanner sc = new Scanner(System.in);
+    int k = sc.nextInt();
+    int l = sc.nextInt();
+    System.out.println(k / l);
+  }
+
+  void show4() {
+    Scanner sc = new Scanner(System.in);
+    int u = sc.nextInt();
+    int i = sc.nextInt();
+    System.out.println(u % i);
+  }
+}
+
+class C extends B {
+
+  void show5() {
+    Scanner sc = new Scanner(System.in);
+    int t = sc.nextInt();
+    int y = sc.nextInt();
+    System.out.println(t + y);
+  }
+
+  void show6() {
+    Scanner sc = new Scanner(System.in);
+    int c = sc.nextInt();
+    int d = sc.nextInt();
+    System.out.println(c + d);
+  }
+}
+
+public class Prectice {
+  public static void main(String[] args) {
+
+    C k = new C();
+    k.show1();
+    k.show2();
+    k.show3();
+    k.show4();
+    k.show5();
+    k.show6();
+
+  }
+}
+====================================================================================================
+Q.5
+INSTANCE VARIABLE:- 
+
+class A {
+  int a, b;
+
+  void show1(int a, int b) {
+    this.a = a;
+    this.b = b;
+    System.out.println(a + b);
+  }
+}
+
+class B extends A {
+  int a, b;
+
+  void show2(int a, int b) {
+    this.a = a;
+    this.b = b;
+    System.out.println(a - b);
+  }
+}
+
+class C extends B {
+  int a, b;
+
+  void show3(int a, int b) {
+    this.a = a;
+    this.b = b;
+    System.out.println(a / b);
+  }
+}
+
+class D extends C {
+  int a, b;
+
+  void show4(int a, int b) {
+    this.a = a;
+    this.b = b;
+    System.out.println(a % b);
+  }
+}
+
+public class Prectice {
+  public static void main(String[] args) {
+    D k = new D();
+    k.show1(2, 3);
+    k.show2(6, 7);
+    k.show3(5, 6);
+    k.show4(2, 3);
+  }
+}
+===================================================================================================
+USER INPUT:-
+
+import java.util.*;
+
+class A {
+  Scanner sc = new Scanner(System.in);
+  int a = sc.nextInt();
+  int b = sc.nextInt();
+
+  void show1() {
+    System.out.println(a + b);
+  }
+}
+
+class B extends A {
+  Scanner sc = new Scanner(System.in);
+  int a = sc.nextInt();
+  int b = sc.nextInt();
+
+  void show2() {
+    System.out.println(a - b);
+  }
+}
+
+class C extends B {
+  Scanner sc = new Scanner(System.in);
+  int a = sc.nextInt();
+  int b = sc.nextInt();
+
+  void show3() {
+    System.out.println(a / b);
+  }
+}
+
+class D extends C {
+  Scanner sc = new Scanner(System.in);
+  int a = sc.nextInt();
+  int b = sc.nextInt();
+
+  void show4() {
+    System.out.println(a % b);
+  }
+}
+
+public class Prectice {
+  public static void main(String[] args) {
+    D k = new D();
+    k.show1();
+    k.show2();
+    k.show3();
+    k.show4();
+  }
+}
+======================================================================================
+NON PAREMITAR 
+
+class A {
+
+  void show1() {
+    int a = 12;
+    int b = 13;
+    System.out.println(a + b);
+  }
+}
+
+class B extends A {
+  void show2() {
+    int a = 14;
+    int b = 15;
+    System.out.println(a - b);
+  }
+}
+
+class C extends B {
+  void show3() {
+    int a = 10;
+    int b = 20;
+    System.out.println(a / b);
+  }
+}
+
+class D extends C {
+  void show4() {
+    int a = 10;
+    int b = 16;
+    System.out.println(a / b);
+  }
+}
+
+public class Prectice {
+  public static void main(String[] args) {
+    D k = new D();
+    k.show1();
+    k.show2();
+    k.show3();
+    k.show4();
+  }
+}
+========================================================================================
+GATTER AND SETTER METHOD
+
+class A {
+  int a, b;
+
+  void setA(int a, int b) {
+    this.a = a;
+    this.b = b;
+  }
+
+  int gatA() {
+    return a;
+  }
+
+  int getB() {
+    return b;
+  }
+
+  void sum() {
+    System.out.println(a + b);
+  }
+}
+
+class B extends A {
+  int a, b;
+
+  void setB(int a, int b) {
+    this.a = a;
+    this.b = b;
+  }
+
+  int gat1() {
+    return a;
+  }
+
+  int get2() {
+    return b;
+  }
+
+  void sum2() {
+    System.out.println(a - b);
+  }
+}
+
+class C extends B {
+  int a, b;
+
+  void setC(int a, int b) {
+    this.a = a;
+    this.b = b;
+  }
+
+  int gat3() {
+    return a;
+  }
+
+  int get4() {
+    return b;
+  }
+
+  void sum3() {
+    System.out.println(a / b);
+  }
+}
+
+class D extends C {
+  int a, b;
+
+  void setD(int a, int b) {
+    this.a = a;
+    this.b = b;
+  }
+
+  int gat5() {
+    return a;
+  }
+
+  int get6() {
+    return b;
+  }
+
+  void sum4() {
+    System.out.println(a % b);
+  }
+}
+
+public class Prectice {
+  public static void main(String[] args) {
+    D k = new D();
+    k.setA(2, 4);
+    k.setB(5, 4);
+    k.setC(2, 8);
+    k.setD(9, 4);
+
+    k.sum();
+    k.sum2();
+    k.sum3();
+    k.sum4();
+  }
+}
+============================================================================
+USER METHOD GATTER SETTER METHID :- 
+
+import java.util.*;
+
+class A {
+  int a, b;
+
+  void setA(int a, int b) {
+    this.a = a;
+    this.b = b;
+  }
+
+  int gatA() {
+    return a;
+  }
+
+  int getB() {
+    return b;
+  }
+
+  void sum() {
+    System.out.println(a + b);
+  }
+}
+
+class B extends A {
+  int c, d;
+
+  void setB(int c, int d) {
+    this.c = c;
+    this.d = d;
+  }
+
+  int gat1() {
+    return c;
+  }
+
+  int get2() {
+    return d;
+  }
+
+  void sum2() {
+    System.out.println(c - d);
+  }
+}
+
+class C extends B {
+  int e, f;
+
+  void setC(int e, int f) {
+    this.e = e;
+    this.f = f;
+  }
+
+  int gat3() {
+    return e;
+  }
+
+  int get4() {
+    return f;
+  }
+
+  void sum3() {
+    System.out.println(e / f);
+  }
+}
+
+class D extends C {
+  int g, h;
+
+  void setD(int g, int h) {
+    this.g = g;
+    this.h = h;
+  }
+
+  int gat5() {
+    return g;
+  }
+
+  int get6() {
+    return h;
+  }
+
+  void sum4() {
+    System.out.println(g % h);
+  }
+}
+
+public class Prectice {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+
+    int c = sc.nextInt();
+    int d = sc.nextInt();
+
+    int e = sc.nextInt();
+    int f = sc.nextInt();
+
+    int g = sc.nextInt();
+    int h = sc.nextInt();
+
+    D k = new D();
+    k.setA(a, b);
+    k.setB(c, d);
+    k.setC(e, f);
+    k.setD(g, h);
+
+    k.sum();
+    k.sum2();
+    k.sum3();
+    k.sum4();
+  }
+}
+===========================================================
+SUPER KEYWORD := 
+
+class A {
+  void show() {
+    System.out.println("I am Parent");
+  }
+}
+
+class B extends A {
+
+  void show() {
+    super.show();
+    System.out.println("I am child");
+  }
+}
+
+class C extends B {
+
+  void Child2() {
+    super.show();
+    System.out.println("I am Child2");
+  }
+}
+
+public class Prectice {
+  public static void main(String[] args) {
+    C k = new C();
+    k.show();
+  }
+}
+
+

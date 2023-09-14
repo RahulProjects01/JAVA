@@ -1,0 +1,620 @@
+======================================================  default constructor user input : =============================================================== 
+1)add 
+2)sub 
+3)multi 
+4)div 
+5)modular 
+
+-----------------------------------------
+import java.util.*;
+class B {
+    B() {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        System.out.println("Addition: "+a + b);
+    }
+}
+
+public class Ab {
+    public static void main(String[] args) {
+        new B();
+    }
+}
+===================================================================================================
+import java.util.*;
+
+class B {
+    B() {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        System.out.println("Subtraction: "+a - b);
+    }
+}
+
+public class Ab {
+    public static void main(String[] args) {
+        new B();
+    }
+}
+==================================================================================================
+import java.util.*;
+
+class B {
+    B() {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        System.out.println("devision: "+a / b);
+    }
+}
+
+public class Ab {
+    public static void main(String[] args) {
+        new B();
+    }
+}
+================================================================================================
+import java.util.*;
+
+class B {
+    B() {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        System.out.println("module: "+a % b);
+    }
+}
+
+public class Ab {
+    public static void main(String[] args) {
+        new B();
+    }
+}
+
+================================================================================================
+constructor : 
+1)add 
+2)sub 
+3)multi 
+4)div 
+5)modular 
+constant : a=88 b=2 
+---------------------------------------
+
+
+class B {
+    B(int a, int b) {
+        System.out.println("Addition: "+a + b);
+
+    }
+}
+
+public class Ab {
+    public static void main(String[] args) {
+        new B(2, 3);
+    }
+}
+======================================================================================================
+
+class B {
+    B(int a, int b) {
+        System.out.println("Subtraction: "+a - b);
+
+    }
+}
+
+public class Ab {
+    public static void main(String[] args) {
+        new B(2, 3);
+    }
+}
+
+=====================================================================================================
+class B {
+    B(int a, int b) {
+        System.out.println(a / b);
+
+    }
+}
+
+public class Ab {
+    public static void main(String[] args) {
+        new B(2, 3);
+    }
+}
+
+=====================================================================================================
+class B {
+    B(int a, int b) {
+        System.out.println("module: "+a % b);
+
+    }
+}
+
+public class Ab {
+    public static void main(String[] args) {
+        new B(2, 3);
+    }
+}
+
+====================================================================User input Constructor=====================================================
+
+import java.util.*;
+
+class B {
+    B(int a, int b) {
+        System.out.println("Addition: "+a + b);
+    }
+}
+
+public class Ab {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("enter a value: ");
+        int a = sc.nextInt();
+        System.out.print("enter b value: ");
+        int b = sc.nextInt();
+        new B(a, b);
+    }
+}
+=================================================================================
+import java.util.*;
+
+class B {
+    B(int a, int b) {
+        System.out.println(a - b);
+    }
+}
+
+public class Ab {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("enter a value: ");
+        int a = sc.nextInt();
+        System.out.print("enter b value: ");
+        int b = sc.nextInt();
+        new B(a, b);
+    }
+}
+=================================================================================
+import java.util.*;
+
+class B {
+    B(int a, int b) {
+        System.out.println(a / b);
+    }
+}
+
+public class Ab {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("enter a value: ");
+        int a = sc.nextInt();
+        System.out.print("enter b value: ");
+        int b = sc.nextInt();
+        new B(a, b);
+    }
+}
+=================================================================================
+import java.util.*;
+
+class B {
+    B(int a, int b) {
+        System.out.println(a % b);
+    }
+}
+
+public class Ab {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("enter a value: ");
+        int a = sc.nextInt();
+        System.out.print("enter b value: ");
+        int b = sc.nextInt();
+        new B(a, b);
+    }
+}
+=================================================================== constructor : instance variable ===========================================================
+constructor : instance variable 
+1)add 
+2)sub 
+3)multi 
+4)div 
+5)modular 
+constant : a=88 b=2 
+user input 
+----------------------------------------------
+import java.util.*;
+
+class B {
+    int c, d; // instance variable
+
+    B(int a, int b) {
+        c = a;
+        d = b;
+    }
+    void show() {
+        System.out.println("Addition: "+c + d);
+    }
+}
+
+public class Ab {
+    public static void main(String[] args) {
+        B k = new B(5, 6);
+        k.show();
+    }
+}
+=================================================================================================
+import java.util.*;
+
+class B {
+    int c, d; // instance variable
+
+    B(int a, int b) {
+        c = a;
+        d = b;
+    }
+    void show() {
+        System.out.println("Subtraction: "+c - d);
+    }
+}
+
+public class Ab {
+    public static void main(String[] args) {
+        B k = new B(5, 6);
+        k.show();
+    }
+}
+=================================================================================================
+import java.util.*;
+
+class B {
+    int c, d; // instance variable
+
+    B(int a, int b) {
+        c = a;
+        d = b;
+    }
+    void show() {
+        System.out.println("devision: "+c / d);
+    }
+}
+
+public class Ab {
+    public static void main(String[] args) {
+        B k = new B(5, 6);
+        k.show();
+    }
+}
+=================================================================================================
+v
+import java.util.*;
+
+class B {
+    int c, d; // instance variable
+
+    B(int a, int b) {
+        c = a;
+        d = b;
+    }
+    void show() {
+        System.out.println("module: "+c % d);
+    }
+}
+
+public class Ab {
+    public static void main(String[] args) {
+        B k = new B(5, 6);
+        k.show();
+    }
+}
+=====================================================================USER INPUT============================================================================
+import java.util.*;
+
+class B {
+    int c, d; // instance variable
+
+    B(int a, int b) {
+        c = a;
+        d = b;
+    }
+
+    void show() {
+        System.out.println("Addition: "+c + d);
+    }
+}
+
+public class Ab {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("enter a value: ");
+        int a = sc.nextInt();
+        System.out.print("enter b value: ");
+        int b = sc.nextInt();
+        B k = new B(a, b);
+        k.show();
+    }
+}
+=========================================================================================
+import java.util.*;
+
+class B {
+    int c, d; // instance variable
+
+    B(int a, int b) {
+        c = a;
+        d = b;
+    }
+
+    void show() {
+        System.out.println(c - d);
+    }
+}
+
+public class Ab {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("enter a value: ");
+        int a = sc.nextInt();
+        System.out.print("enter b value: ");
+        int b = sc.nextInt();
+        B k = new B(a, b);
+        k.show();
+    }
+}
+=========================================================================================
+import java.util.*;
+
+class B {
+    int c, d; // instance variable
+
+    B(int a, int b) {
+        c = a;
+        d = b;
+    }
+
+    void show() {
+        System.out.println(c / d);
+    }
+}
+
+public class Ab {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("enter a value: ");
+        int a = sc.nextInt();
+        System.out.print("enter b value: ");
+        int b = sc.nextInt();
+        B k = new B(a, b);
+        k.show();
+    }
+}
+=========================================================================================
+import java.util.*;
+
+class B {
+    int c, d; // instance variable
+
+    B(int a, int b) {
+        c = a;
+        d = b;
+    }
+
+    void show() {
+        System.out.println(c % d);
+    }
+}
+
+public class Ab {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("enter a value: ");
+        int a = sc.nextInt();
+        System.out.print("enter b value: ");
+        int b = sc.nextInt();
+        B k = new B(a, b);
+        k.show();
+    }
+}
+======================================================================================================================================================================
+this : constrcutor 
+1)add 
+2)sub 
+3)multi 
+4)div 
+5)modular 
+constant : a=88 b=2 
+user input 
+----------------------------------------
+
+class B {
+    int c, d;
+
+    B(int a, int b) {
+        this.c = a;
+        this.d = b;
+    }
+
+    void show() {
+        System.out.println("Addition: "+c + d);
+    }
+}
+
+public class Ab {
+    public static void main(String[] args) {
+        B k = new B(5, 6);
+        k.show();
+    }
+}
+===============================================================================================
+class B {
+    int c, d;
+
+    B(int a, int b) {
+        this.c = a;
+        this.d = b;
+    }
+
+    void show() {
+        System.out.println("Subtraction: "+c - d);
+    }
+}
+
+public class Ab {
+    public static void main(String[] args) {
+        B k = new B(5, 6);
+        k.show();
+    }
+}
+===============================================================================================
+class B {
+    int c, d;
+
+    B(int a, int b) {
+        this.c = a;
+        this.d = b;
+    }
+
+    void show() {
+        System.out.println("devision: "+c / d);
+    }
+}
+
+public class Ab {
+    public static void main(String[] args) {
+        B k = new B(5, 6);
+        k.show();
+    }
+}
+===============================================================================================
+class B {
+    int c, d;
+
+    B(int a, int b) {
+        this.c = a;
+        this.d = b;
+    }
+
+    void show() {
+        System.out.println("module: "+c % d);
+    }
+}
+
+public class Ab {
+    public static void main(String[] args) {
+        B k = new B(5, 6);
+        k.show();
+    }
+}
+======================================================================USER INPUT======================================================================================
+import java.util.*;
+
+class B {
+    int c, d;
+
+    B(int a, int b) {
+        this.c = a;
+        this.d = b;
+    }
+
+    void show() {
+        System.out.println("Addition: "+c + d);
+    }
+}
+
+public class Ab {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a value: ");
+        int a = sc.nextInt();
+        System.out.println("Enter b value: ");
+        int b = sc.nextInt();
+        B k = new B(a, b);
+        k.show();
+    }
+}
+===================================================================================
+import java.util.*;
+
+class B {
+    int c, d;
+
+    B(int a, int b) {
+        this.c = a;
+        this.d = b;
+    }
+
+    void show() {
+        System.out.println(c - d);
+    }
+}
+
+public class Ab {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a value: ");
+        int a = sc.nextInt();
+        System.out.println("Enter b value: ");
+        int b = sc.nextInt();
+        B k = new B(a, b);
+        k.show();
+    }
+}
+===================================================================================
+import java.util.*;
+
+class B {
+    int c, d;
+
+    B(int a, int b) {
+        this.c = a;
+        this.d = b;
+    }
+
+    void show() {
+        System.out.println("devision: "+c / d);
+    }
+}
+
+public class Ab {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a value: ");
+        int a = sc.nextInt();
+        System.out.println("Enter b value: ");
+        int b = sc.nextInt();
+        B k = new B(a, b);
+        k.show();
+    }
+}
+===================================================================================
+import java.util.*;
+
+class B {
+    int c, d;
+
+    B(int a, int b) {
+        this.c = a;
+        this.d = b;
+    }
+
+    void show() {
+        System.out.println("module: "+c % d);
+    }
+}
+
+public class Ab {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a value: ");
+        int a = sc.nextInt();
+        System.out.println("Enter b value: ");
+        int b = sc.nextInt();
+        B k = new B(a, b);
+        k.show();
+    }
+}
+===================================================================================
+

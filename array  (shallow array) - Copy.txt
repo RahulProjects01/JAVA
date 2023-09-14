@@ -1,0 +1,444 @@
+multiple data store in single varaible 
+short 
+long 
+double 
+byte 
+int 
+float 
+char 
+a)constant 
+b)dynamic through new 
+a)constant 
+b)user input 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+public class Ab {
+    static void printArray(int[] a) {
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
+        }
+        System.out.println();
+    }
+
+    static void printArray2(float[] arr1) {
+        for (int i = 0; i < arr1.length; i++) {
+            System.out.print(arr1[i] + " ");
+        }
+        System.out.println();
+    }
+
+    static void printArray3(int[] b) {
+        for (int i = 0; i < b.length; i++) {
+            System.out.print(b[i] + " ");
+        }
+        System.out.println();
+    }
+
+    static void char1(char[] chr) {
+        for (int i = 0; i < chr.length; i++) {
+            System.out.print(chr[i] + " ");
+        }
+        System.out.println();
+    }
+
+    static void shot(short[] shot) {
+        for (int i = 0; i < shot.length; i++) {
+            System.out.print(shot[i] + " ");
+        }
+        System.out.println();
+    }
+
+    static void doub(double[] doub) {
+        for (int i = 0; i < doub.length; i++) {
+            System.out.print(doub[i] + " ");
+        }
+        System.out.println();
+    }
+
+    static void byt(byte[] byt) {
+        for (int i = 0; i < byt.length; i++) {
+            System.out.print(byt[i] + " ");
+        }
+        System.out.println();
+    }
+
+    static void log(long[] log) {
+        for (int i = 0; i < log.length; i++) {
+            System.out.print(log[i] + " ");
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        int a[] = { 1, 2, 3, 4, 5 };
+        printArray(a);
+
+        float arr1[] = { 1.2f, 2.3f, 3.3f, 6.5f };
+        printArray2(arr1);
+
+        char chr[] = { 'r', 'a', 'h', 'u', 'l' };
+        char1(chr);
+
+        short shot[] = { 10, 20, 30, 40, 50 };
+        shot(shot);
+
+        double doub[] = { 1.2, 2.1, 3.3, 32.3, 2.23 };
+        doub(doub);
+
+        byte byt[] = { 121, 127, 12, -12, -128, 21 };
+        byt(byt);
+
+        long log[] = { 12, 122, 222, 44, 43, 554, 544 };
+        log(log);
+    }
+}
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+dynamic --------------->
+
+
+public class Ab {
+    static void arry(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
+
+    static void chr(char[] ch) {
+        for (int i = 0; i < ch.length; i++) {
+            System.out.print(ch[i] + " ");
+        }
+        System.out.println();
+    }
+
+    static void fl(float[] fl) {
+        for (int i = 0; i < fl.length; i++) {
+            System.out.print(fl[i] + " ");
+        }
+        System.out.println();
+    }
+
+    static void dob(double[] db) {
+        for (int i = 0; i < db.length; i++) {
+            System.out.print(db[i] + " ");
+        }
+        System.out.println();
+    }
+
+    static void log(long[] log) {
+        for (int i = 0; i < log.length; i++) {
+            System.out.print(log[i] + " ");
+        }
+        System.out.println();
+    }
+
+    static void by(byte[] by) {
+        for (int i = 0; i < by.length; i++) {
+            System.out.print(by[i] + " ");
+        }
+        System.out.println();
+    }
+
+     static void sh(short[] sh) {
+        for (int i = 0; i < sh.length; i++) {
+            System.out.print(sh[i] + " ");
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        int arr[] = new int[5];
+        arr[0] = 10;
+        arr[1] = 20;
+        arr[2] = 30;
+        arr[3] = 40;
+        arr[4] = 50;
+        arry(arr);
+
+        char ch[] = new char[5];
+        ch[0] = 'r';
+        ch[1] = 'a';
+        ch[2] = 'h';
+        ch[3] = 'u';
+        ch[4] = 'l';
+        chr(ch);
+
+        float fl[] = new float[5];
+        fl[0] = 2.3f;
+        fl[1] = 3.3f;
+        fl[2] = 4.3f;
+        fl[3] = 5.3f;
+        fl[4] = 6.3f;
+        fl(fl);
+
+        double db[] = new double[5];
+        db[0] = 2.1f;
+        db[1] = 3.1f;
+        db[2] = 1.1f;
+        db[3] = 1.f;
+        db[4] = 1.0f;
+        dob(db);
+
+        long log[] = new long[5];
+        log[0] = 123;
+        log[1] = 133;
+        log[2] = 143;
+        log[3] = 153;
+        log[4] = 163;
+        log(log);
+
+        byte by[] = new byte[5];
+        by[0] = 127; // highest value
+        by[1] = 124;
+        by[2] = 123;
+        by[3] = -121;
+        by[4] = -128; // low value
+        by(by);
+
+        short sh[] = new short[5];
+        sh[0] = 12;
+        sh[1] = 123;
+        sh[2] = 14;
+        sh[3] = 144;
+        sh[4] = 124;
+        sh(sh);
+    }
+}
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                                                  -------------------------------- USER INPUT ----------------------------------
+
+
+import java.util.*;
+
+public class Ab {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter float arry size: ");
+        int size = sc.nextInt();
+        float arr[] = new float[size];
+        for (int i = 0; i < size; i++) {
+            arr[i] = sc.nextFloat();
+        }
+        for (int j = 0; j < size; j++) {
+            System.out.print(arr[j] + " ");
+        }
+        System.out.println();
+        System.out.println("Enter char arry size: ");
+        int size2 = sc.nextInt();
+        char arr2[] = new char[size2];
+        for (int i = 0; i < size2; i++) {
+            arr2[i] = sc.next().charAt(0);
+        }
+        for (int j = 0; j < size2; j++) {
+            System.out.print(arr2[j] + " ");
+        }
+        System.out.println();
+        System.out.println("Enter int arry size: ");
+        int size3 = sc.nextInt();
+        int arr3[] = new int[size3];
+        for (int i = 0; i < size3; i++) {
+            arr3[i] = sc.nextInt();
+        }
+        for (int j = 0; j < size3; j++) {
+            System.out.print(arr3[j] + " ");
+        }
+
+        System.out.println();
+        System.out.println("Enter long arry size: ");
+        int size4 = sc.nextInt();
+        long arr4[] = new long[size4];
+        for (int i = 0; i < size4; i++) {
+            arr4[i] = sc.nextLong();
+        }
+        for (int j = 0; j < size4; j++) {
+            System.out.print(arr4[j] + " ");
+        }
+        System.out.println();
+
+        System.out.println("Enter double arry size: ");
+        int size5 = sc.nextInt();
+        double arr5[] = new double[size5];
+        for (int i = 0; i < size5; i++) {
+            arr5[i] = sc.nextDouble();
+        }
+        for (int j = 0; j < size5; j++) {
+            System.out.print(arr5[j] + " ");
+        }
+        System.out.println();
+
+        System.out.println("Enter short arry size: ");
+        int size6 = sc.nextInt();
+        short arr6[] = new short[size6];
+        for (int i = 0; i < size6; i++) {
+            arr6[i] = sc.nextShort();
+        }
+        for (int j = 0; j < size6; j++) {
+            System.out.print(arr6[j] + " ");
+        }
+        System.out.println();
+
+        System.out.println("Enter byte arry size (-128 to 127): ");
+        int size7 = sc.nextInt();
+        byte arr7[] = new byte[size7];
+        for (int i = 0; i < size7; i++) {
+            arr7[i] = sc.nextByte();
+        }
+        for (int j = 0; j < size7; j++) {
+            System.out.print(arr7[j] + " ");
+        }
+        System.out.println();
+    }
+}
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                                       ----------------------------------------- COPY --------------------------------------- 
+multiple data store in single varaible 
+short 
+long 
+double 
+byte 
+int 
+float 
+char 
+a)constant 
+b)dynamic through new 
+a)constant 
+b)user input 
+
+---------------------------------------------
+public class Ab {
+    static void arry(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
+
+    static void chr(char[] ch) {
+        for (int i = 0; i < ch.length; i++) {
+            System.out.print(ch[i] + " ");
+        }
+        System.out.println();
+    }
+
+    static void fl(float[] fl) {
+        for (int i = 0; i < fl.length; i++) {
+            System.out.print(fl[i] + " ");
+        }
+        System.out.println();
+    }
+
+    static void dob(double[] db) {
+        for (int i = 0; i < db.length; i++) {
+            System.out.print(db[i] + " ");
+        }
+        System.out.println();
+    }
+
+    static void log(long[] log) {
+        for (int i = 0; i < log.length; i++) {
+            System.out.print(log[i] + " ");
+        }
+        System.out.println();
+    }
+
+    static void byt(byte[] by) {
+        for (int i = 0; i < by.length; i++) {
+            System.out.print(by[i] + " ");
+        }
+        System.out.println();
+    }
+
+    static void shr(short[] sh) {
+        for (int i = 0; i < sh.length; i++) {
+            System.out.print(sh[i] + " ");
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        int arr[] = new int[5];
+        arr[0] = 10;
+        arr[1] = 20;
+        arr[2] = 30;
+        arr[3] = 40;
+        arr[4] = 50;
+        arry(arr);
+        int arrk[] = arr;
+        arry(arrk);
+
+        char ch[] = new char[5];
+        ch[0] = 'r';
+        ch[1] = 'a';
+        ch[2] = 'h';
+        ch[3] = 'u';
+        ch[4] = 'l';
+        chr(ch);
+        char chrk[] = ch;
+        chr(chrk);
+
+        float fl[] = new float[5];
+        fl[0] = 2.3f;
+        fl[1] = 3.3f;
+        fl[2] = 4.3f;
+        fl[3] = 5.3f;
+        fl[4] = 6.3f;
+        fl(fl);
+        float flt[] = fl;
+        fl(flt);
+
+        double db[] = new double[5];
+        db[0] = 2.1f;
+        db[1] = 3.1f;
+        db[2] = 1.1f;
+        db[3] = 1.f;
+        db[4] = 1.0f;
+        dob(db);
+        double dbs[] = db;
+        dob(dbs);
+
+        long log[] = new long[5];
+        log[0] = 123;
+        log[1] = 133;
+        log[2] = 143;
+        log[3] = 153;
+        log[4] = 163;
+        log(log);
+        long logs[] = log;
+        log(logs);
+
+        byte by[] = new byte[5];
+        by[0] = 127; // highest value
+        by[1] = 124;
+        by[2] = 123;
+        by[3] = -121;
+        by[4] = -128; // low value
+        byt(by);
+        byte bye[] = by;
+        byt(bye);
+
+        short sh[] = new short[5];
+        sh[0] = 12;
+        sh[1] = 123;
+        sh[2] = 14;
+        sh[3] = 144;
+        sh[4] = 124;
+        shr(sh);
+        short kk[] = sh;
+        shr(kk);
+    }
+}
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+how many number is greter is 5 ----------------------------->
+
+public class AD {
+    public static void main(String[] args) {
+        int a[] = { 1, 2, 3, 4, 5, 8, 9 ,7};
+        int max = 5;
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] > max) {
+               System.out.println(a[i]+" ");
+            }
+        }
+    }
+}

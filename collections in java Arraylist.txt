@@ -1,0 +1,378 @@
+String) ----------->
+
+import java.util.*;
+
+public class Ab {
+    public static void main(String[] args) {
+        ArrayList<String> al = new ArrayList<>();
+
+        al.add("Rahul");
+        al.add("Vaibhav");
+        al.add("Mohit");
+        System.out.println(al);
+    }
+}
+----------------------------------------------------
+Byte) ----------->
+
+
+import java.util.*;
+public class Ab {
+    public static void main(String[] args) {
+        ArrayList<Byte> al = new ArrayList<>();
+
+        al.add((byte)101);
+        al.add((byte)102);
+        al.add((byte)103);
+        al.add((byte)104);
+        al.add((byte)105);
+       System.out.println(al);
+
+    }
+}
+----------------------------------------------------
+Double) ----------->
+
+import java.util.*;
+
+public class Ab {
+    public static void main(String[] args) {
+        ArrayList<Double> al = new ArrayList<>();
+
+        al.add(10.21);
+        al.add(11.33);
+        al.add(12.24);
+        System.out.println(al);
+    }
+}
+----------------------------------------------
+Float) ----------->
+
+import java.util.*;
+
+public class Ab {
+    public static void main(String[] args) {
+        ArrayList<Float> al = new ArrayList<>();
+
+        al.add(10.21f);
+        al.add(11.33f);
+        al.add(12.24f);
+        System.out.println(al);
+    }
+}
+---------------------------------------------------
+Integer) ----------->
+
+import java.util.*;
+
+public class Ab {
+    public static void main(String[] args) {
+        ArrayList<Integer> al = new ArrayList<>();
+
+        al.add(10);
+        al.add(11);
+        al.add(12);
+        System.out.println(al);
+    }
+}
+------------------------------------------------
+Boolean) ----------->
+
+import java.util.*;
+public class Ab {
+    public static void main(String[] args) {
+        ArrayList<Boolean> al = new ArrayList<>();
+
+        al.add(true);
+        al.add(false);
+       System.out.println(al);
+
+    }
+}
+-------------------------------------------------
+Character) ----------->
+
+import java.util.*;
+
+public class Ab {
+    public static void main(String[] args) {
+        ArrayList<Character> al = new ArrayList<>();
+
+        al.add('R');
+        al.add('A');
+        al.add('h');
+        al.add('u');
+        al.add('l');
+        System.out.println(al);
+    }
+}
+---------------------------------------------------
+Long) ----------->
+
+import java.util.*;
+public class Ab {
+    public static void main(String[] args) {
+        ArrayList<Long> al = new ArrayList<>();
+
+        al.add((long)101);
+        al.add((long)102);
+        al.add((long)103);
+        al.add((long)104);
+        al.add((long)105);
+       System.out.println(al);
+
+    }
+}
+---------------------------------------------------
+even number -------------> 
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Integer> al = new ArrayList<>();
+
+        al.add(10);
+        al.add(11);
+        al.add(12);
+        al.add(13);
+        al.add(14);
+
+        for (int i = 0; i < al.size(); i++) {
+            if (al.get(i) % 2 == 0) {
+                System.out.println("even number: "+al.get(i));
+            }
+        }
+
+    }
+}
+----------------------------------------------------
+odd number ----------------------->
+
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Integer> al = new ArrayList<>();
+
+        al.add(23);
+        al.add(44);
+        al.add(66);
+        al.add(12);
+        al.add(55);
+        al.add(89);
+        for (int i = 0; i < al.size(); i++) {
+            if (al.get(i) % 2 == 1) {
+                System.out.println("odd number: " + al.get(i));
+            }
+        }
+    }
+}
+
+-----------------------------------------------------------------------
+arraylist : integer number 
+1234567 
+
+point number 1: 1 2 3 5 4 5 6 7 
+
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Integer> al = new ArrayList<>();
+
+        al.add(1);
+        al.add(2);
+        al.add(3);
+        al.add(4);
+        al.add(5);
+        al.add(6);
+        al.add(3 , 5);
+        System.out.println(al);
+    }
+}
+
+-----------------------------------------------------------------------
+// point number 2: 
+// 1 2 3 5 4 5 6 7 (3===>66)
+// 1 2 66 5 4 5 6 7 
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Integer> al = new ArrayList<>();
+
+        al.add(1);
+        al.add(2);
+        al.add(3);
+        al.add(4);
+        al.add(5);
+        al.add(6);
+        al.add(7);
+        al.set(3 , 66);
+        System.out.println(al);
+    }
+}
+-----------------------------------------------------------------------
+// point number 3: 
+// first elememt remove 
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Integer> al = new ArrayList<>();
+
+        al.add(1);
+        al.add(2);
+        al.add(3);
+        al.add(4);
+        al.add(5);
+        al.add(6);
+        al.add(7);
+        al.remove(0);
+        System.out.println(al);
+    }
+}
+-----------------------------------------------------------------------
+// point number 3: 
+// lastelememt remove 
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Integer> al = new ArrayList<>();
+
+        al.add(1);
+        al.add(2);
+        al.add(3);
+        al.add(4);
+        al.add(5);
+        al.add(6);
+        al.add(7);
+        al.remove(al.size()-1);
+        System.out.println(al);
+    }
+}
+
+----------------------------------------------------------------------
+
+// point 5:
+// index, value ko add krna 
+// 3, 89 
+
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Integer> al = new ArrayList<>();
+
+        al.add(1);
+        al.add(2);
+        al.add(3);
+        al.add(4);
+        al.add(5);
+        al.add(6);
+        al.add(7);
+        al.add(3,89);
+        System.out.println(al);
+    }
+}
+
+----------------------------------------------------------------------
+// point 6: 
+// even number  
+
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Integer> al = new ArrayList<>();
+
+        al.add(1);
+        al.add(2);
+        al.add(3);
+        al.add(4);
+        al.add(5);
+        al.add(6);
+        al.add(7);
+        
+        for(int i=0;i<al.size();i++)
+        {
+            if(al.get(i) % 2 == 0){
+                System.out.println(al.get(i));
+            }
+        }
+        
+    }
+}
+----------------------------------------------------------------------
+// point 7: 
+// oddnumber  
+
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Integer> al = new ArrayList<>();
+
+        al.add(1);
+        al.add(2);
+        al.add(3);
+        al.add(4);
+        al.add(5);
+        al.add(6);
+        al.add(7);
+        
+        for(int i=0;i<al.size();i++)
+        {
+            if(al.get(i) % 2 != 0){
+                System.out.println(al.get(i));
+            }
+        }
+        
+    }
+}
+
+----------------------------------------------------------------------
+point 8: 
+sort through method  
+
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Integer> al = new ArrayList<>();
+
+        al.add(12);
+        al.add(21);
+        al.add(34);
+        al.add(42);
+        al.add(25);
+        al.add(62);
+        al.add(27);
+        Collections.sort(al);
+        System.out.println(al);
+    }
+}
+----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

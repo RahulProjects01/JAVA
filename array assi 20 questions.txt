@@ -1,0 +1,316 @@
+1) Write a Java program to find the sum of all elements in an integer array.
+
+public class Ab{
+    public static void main(String[] args) {
+        int a[] = {1,2,3,4,5};
+        int sum=0;
+        for(int i=0;i<a.length;i++)
+        {
+            sum+=a[i];
+        }
+          System.out.println("sum:"+sum);
+    }
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+2)Write a Java program to find the maximum element in an array of integers.
+
+public class Ab {
+    public static void main(String[] args) {
+        int a[] = { 1, 2, 3, 4, 5, 6 };
+        int max = 0;
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] > max) {
+                max = a[i];
+            }
+        }
+        System.out.println("max: " + max);
+    }
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+3)Write a Java program to count the number of even and odd elements in an array of integers.
+
+public class Ab{
+    public static void main(String[] args) {
+        int a[] = {1,2,3,4,5,6,7,8,9,54};
+        int count = 0;
+        int count2 = 0;
+        for(int i=0;i<a.length;i++)
+        {
+            if(a[i] % 2 == 0)
+            {
+                count++;
+            }
+            else{
+                count2++;
+            }
+        }
+        System.out.println("even "+count);
+        System.out.println("odd "+count2);
+    }
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+4) Write a Java program to find the average of elements in an array of integers.
+
+public class Ab{
+    public static void main(String[] args) {
+        int a[] = {1,2,3,4,5,6,7,8,9,10};
+        int count = 0;
+        int sum=0;
+        for(int i=0;i<a.length;i++)
+        {
+          count++;
+          sum +=a[i];
+        }
+        int average = sum/count;
+        System.out.println("Average: "+average);
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+5)Write a Java program to reverse an array of integers
+
+public class Ab {
+    public static void main(String[] args) {
+        int a[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        for (int i = a.length - 1; i >= 1; i--) {
+            System.out.print(a[i] + " ");
+        }
+    }
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+6) Write a Java program to find the second largest element in an array of integers.
+
+public class Ab {
+    static void printArray(int a[]) {
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
+        }
+    }
+
+    static void sort(int a[], int temp) {
+        for (int i = 0; i < a.length - 1; i++) {
+            for (int j = 0; j < a.length - i - 1; j++) {
+                if (a[j] > a[j + 1]) {
+                    temp = a[j];
+                    a[j] = a[j + 1];
+                    a[j + 1] = temp;
+
+                }
+            }
+        }
+        printArray(a);
+    }
+
+    static void duplicate(int a[]) {
+        for (int i = 0; i < a.length; i++) {
+            for (int j = i + 1; j < a.length; j++) {
+                if (a[i] == a[j]) {
+                    a[i] = -1;
+                }
+            }
+        }
+        printArray(a);
+    }
+
+    static void max(int a[]) {
+        int max = 0;
+        for (int i = 0; i < a.length - 1; i++) {
+            if (a[i] > max) {
+                max = a[i];
+            }
+        }
+        System.out.println("second Largest value is: "+max);
+    }
+
+    public static void main(String[] args) {
+        int a[] = { 1, 2, 3, 4, 4, 8, 2, 5, 3, 78 };
+        duplicate(a);
+        System.out.println();
+        sort(a, 0);
+        System.out.println();
+        max(a);
+    }
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+7)Write a Java program to find the common elements between two arrays of integers.
+
+public class Ab{
+    public static void main(String[] args) {
+        int a[] = {1,2,3,4,5,6};
+        int b[] = {4,5,6,7,8,9,10};
+
+        for(int i=0;i<a.length;i++)
+        {
+            for(int j=0;j<b.length;j++)
+            {
+                if(a[i] == b[j])
+                {
+                    System.out.print(a[i]+" ");
+                }
+            }
+        }
+    }
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+8)Write a Java program to find the frequency of each element in an array of integers. take positive elements and negative elements 
+
+public class Ab {
+    public static void main(String[] args) {
+        int a[] = { 1, 2, 1, 4, 5, 6, 7 };
+        int count;
+        for (int i = 0; i < a.length; i++) {
+            count = 0;
+            for (int j = 0; j < a.length; j++) {
+                if (a[i] == a[j]) {
+                    count++;
+
+                }
+            }
+            System.out.print(count);
+         }
+    }
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+9)Write a Java program to find the intersection of two arrays.(intersection means :common elements)
+
+public class Ab {
+    public static void main(String[] args) {
+        int a[] = { 1, 2, 3, 4,5};
+        int b[] = { 8, 6, 2, 3, 9, 5 };
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < b.length; j++) {
+               if(a[i] == b[j])
+               {
+                System.out.print("same element is : "+a[i]+" ");
+               }
+            }
+        }
+    }
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+10)Write a Java program to shift all zeros in an array to the end while maintaining the order of non-zero elements. 
+given elements is : { 0, 2, 0, 4, 0, 6, 8, 0 } 
+
+public class Ab {
+    static void printArray(int a[]) {
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
+        } 
+    }
+
+    static void zero(int a[]) {
+        int temp = 0;
+        for (int i = 0; i < a.length; i++) {
+            for (int j = i + 1; j < a.length; j++) {
+                if (a[i] == 0) {
+                    temp = a[i];
+                    a[i] = a[j];
+                    a[j] = temp;
+                }
+            }
+        }
+        printArray(a);
+    }
+
+    public static void main(String[] args) {
+        int a[] = { 0, 2, 0, 4, 0, 6, 8, 0 };
+        zero(a);
+
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 11) Write a Java program to find the longest increasing subarray.
+
+import java.util.*;
+
+public class Ab {
+
+    static void printArray(int a[]) {
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
+        }
+        System.out.println();
+    }
+
+    static void revarce(int a[], int b[]) {
+        int sum = 0;
+        int sum2 = 0;
+        for (int i = 0; i < a.length; i++) {
+            sum += i;
+        }
+        for (int i = 0; i < b.length; i++) {
+            sum2 += i;
+        }
+
+        if (sum > sum2) {
+            System.out.println("array 1st is grater: " + sum);
+        } else {
+            System.out.println("array 2nd is greter: " + sum2);
+        }
+
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter first array size: ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+        System.out.println("Enter 2nd array size: ");
+        int size2 = sc.nextInt();
+        int b[] = new int[size2];
+
+        for (int i = 0; i < size; i++) {
+            a[i] = sc.nextInt();
+        }
+        for (int i = 0; i < size2; i++) {
+            b[i] = sc.nextInt();
+        }
+
+        printArray(a);
+        printArray(b);
+        revarce(a, b);
+    }
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 12)find the peak element in array 
+
+public class Ab {
+    static void print(int a[]) {
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
+        }
+        System.out.println();
+    }
+
+    static void rev(int a[]) {
+        int max = 0;
+        for (int i = 0; i < a.length; i++) {
+            if (max < a[i]) {
+                  max = a[i];
+            }
+        }
+        System.out.println("peak number is : "+max);
+    }
+
+    public static void main(String[] args) {
+        int a[] = { 1, 23, 2, 453, 5, 3 };
+        print(a);
+        rev(a);
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+

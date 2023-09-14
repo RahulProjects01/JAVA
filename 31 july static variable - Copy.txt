@@ -1,0 +1,631 @@
+1) 
+A() 
+static 
+anono 
+
+output : Ststic block
+         Annnonimous
+
+
+class A{
+  
+    static{
+        System.out.println("Ststic block");
+    }
+    {
+        System.out.println("Annnonimous");
+    }
+}
+
+public class Main{
+    public static void main(String[] args)
+    {
+       new A(); 
+    }
+   }
+
+==========================================================
+ 2) 
+ano 
+static 
+A() 
+
+output : Ststic block
+         Annnonimous
+
+class A{
+  
+    {
+        System.out.println("Annnonimous");
+    }
+    static{
+        System.out.println("Ststic block");
+    }
+    
+}
+
+public class Main{
+    public static void main(String[] args)
+    {
+       new A(); 
+    }
+   }
+=========================================================
+3)
+static 
+A() 
+anon 
+
+output : Ststic block
+         Annnonimous
+         constructor
+
+class A{
+    static{
+        System.out.println("Ststic block");
+    }
+    A()
+    {
+        System.out.println("constructor");
+    }
+    
+    {
+        System.out.println("Annnonimous");
+    }
+}
+
+public class Main{
+    public static void main(String[] args)
+    {
+       new A(); 
+    }
+    
+}
+========================================================
+
+// 1)outer class static and non-static inner class and non-static method 
+// 3)outer class non static and inner class static and method static 
+
+static class A{
+    class B{
+        void f()
+        {
+            System.out.println("message");
+        }
+    }
+}
+public class Main{
+    public static void main(String[] args)
+    {
+        A.B.f();
+    }
+}
+ output:- Error;
+===================================================================================
+// 2)outer class static and inner class non static and method is static 
+
+static class A{
+    class B{
+       static void f()
+        {
+            System.out.println("message");
+        }
+    }
+}
+public class Main{
+    public static void main(String[] args)
+    {
+        A.B.f();
+    }
+}
+output:- Error;
+==================================================================
+// 3)outer class non static and inner class static and method static 
+
+class A{
+   static class B{
+       static void f()
+        {
+            System.out.println("message");
+        }
+    }
+}
+public class Main{
+    public static void main(String[] args)
+    {
+        A.B.f();
+    }
+}
+output :- show
+=================================================================
+// 4)outer class static and inner class static and method static 
+
+
+static class A{
+   static class B{
+      static void f()
+        {
+            System.out.println("message");
+        }
+    }
+}
+public class Main{
+    public static void main(String[] args)
+    {
+        A.B.f();
+    }
+}
+output:- Error
+=====================================================================================================================
+5)
+class parent 
+int a,b =>static 
+show() =>addition 
+
+a)constant -------------------------------->
+
+
+ class Parent{
+       void add()
+        {
+            int a = 10;
+            int b = 20;
+            int c = a+b;
+            System.out.println(c);
+        }
+    
+}
+public class Main{
+    public static void main(String[] args)
+    {
+        Parent k = new Parent();
+        k.add();
+    }
+}
+========================================================================================================================== 
+class parent 
+int a,b =>static 
+show() =>addition 
+
+
+b)user input---------------->
+
+
+import java.util.*;
+ class Parent{
+       void add()
+        {
+           Scanner sc = new Scanner(System.in);
+           int a = sc.nextInt();
+           int b = sc.nextInt();
+            int c = a+b;
+            System.out.println(c);
+        }
+    
+}
+public class Main{
+    public static void main(String[] args)
+    {
+        Parent k = new Parent();
+        k.add();
+    }
+}
+========================================================================================================================== 
+6)
+// class parent 
+// void show() 
+// four variable : static add
+
+// output : 
+// a)constant 
+// b)user input 
+
+class Parent{
+        static int a = 10;
+        static int b = 20;
+        static int c = 30;
+        static int d = 40;
+   
+    void show(){
+        int j = a+b+c+d;
+         System.out.print(j);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	
+	new Parent().show();
+	}
+}
+========================================================================================================================== 
+
+// class parent 
+// void show() 
+// four variable : static add
+
+// output : 
+
+// b)user input ----------------------->
+
+import java.util.*;
+class Parent{
+   static Scanner sc = new Scanner(System.in);
+         static int a = sc.nextInt();
+         static int b = sc.nextInt();
+         static int c = sc.nextInt();
+         static int d = sc.nextInt();
+        
+   
+    void show(){
+        int j = a+b+c+d;
+         System.out.print(j);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	
+	new Parent().show();
+	}
+}
+
+
+========================================================================================================================== 
+7)
+// class parent 
+// void show() 
+// four variable : static add
+
+// void show1 () 
+// four variable : static add
+
+// output :
+ 
+// a)constant----------------------------> 
+
+
+
+class Parent{
+        static int a = 10;
+        static int b = 20;
+        static int c = 30;
+        static int d = 40;
+   
+    void show(){
+        int j = a+b+c+d;
+         System.out.print(j);
+    }
+     void show1(){
+        int j = a+b+c+d;
+         System.out.print(j);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	
+        Parent k = new Parent();
+	k.show();
+	k.show1();
+	}
+}
+========================================================================================================================== 
+// class parent 
+// void show() 
+// four variable : static add
+
+// void show1 () 
+// four variable : static add
+
+// output : 
+
+// b)user input ----------------------------->
+
+import java.util.*;
+class Parent
+{
+ static Scanner sc = new Scanner (System.in);
+
+  static int a = sc.nextInt();
+  static int b = sc.nextInt();
+  static int c = sc.nextInt();
+  static int d = sc.nextInt();
+ 
+
+  void show ()
+  {
+    int j = a + b + c + d;
+      System.out.print(j);
+  }
+  void show1 ()
+  {
+    int j = a + b + c + d;
+    System.out.print (j);
+  }
+}
+
+public class Main
+{
+  public static void main (String[]args)
+  {
+
+    Parent k = new Parent();
+      k.show();
+      k.show1();
+  }
+}
+
+========================================================================================================================== 
+8)
+// class parent 
+// static void show() 
+// four variable : static add
+
+// static void show1 () 
+// four variable : static add
+
+// output : 
+
+// a)constant ---------------------------------->
+
+
+// b)user input 
+class Parent{
+        static int a = 10;
+        static int b = 20;
+        static int c = 30;
+        static int d = 40;
+   
+  static void show(){
+        int j = a+b+c+d;
+         System.out.println(j);
+    }
+  static void show1(){
+        int j = a+b+c+d;
+         System.out.println(j);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	
+   Parent k = new Parent();
+	k.show();
+	k.show1();
+	}
+}
+========================================================================================================================== 
+// class parent 
+// static void show() 
+// four variable : static add
+
+// static void show1 () 
+// four variable : static add
+
+// output : 
+// a)constant 
+// b)user input
+
+// b)user input -------------------------------->
+
+import java.util.*;
+class Parent{
+    static Scanner sc = new Scanner(System.in);
+    static int a = sc.nextInt();
+    static int b = sc.nextInt();
+    static int c = sc.nextInt();
+    static int d = sc.nextInt();
+    
+  static void show(){
+        int j = a+b+c+d;
+         System.out.println(j);
+    }
+    static void show1(){
+        int j = a+b+c+d;
+         System.out.println(j);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	
+   Parent k = new Parent();
+	k.show();
+	k.show1();
+	}
+}
+========================================================================================================================== 
+9)
+// class parent 
+// static void show() 
+// four variable : static add
+
+// void show1 () 
+// four variable : static add
+
+// output : 
+
+// a)constant ---------------------------------->
+
+
+// b)user input 
+class Parent{
+        static int a = 10;
+        static int b = 20;
+        static int c = 30;
+        static int d = 40;
+   
+  static void show(){
+        int j = a+b+c+d;
+         System.out.println(j);
+    }
+  static void show1(){
+        int j = a+b+c+d;
+         System.out.println(j);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	
+   Parent k = new Parent();
+	k.show();
+	k.show1();
+	}
+}
+========================================================================================================================== 
+// class parent 
+// static void show() 
+// four variable : static add
+
+// void show1 () 
+// four variable : static add
+
+// output : 
+// a)constant 
+// b)user input
+
+// b)user input -------------------------------->
+
+import java.util.*;
+class Parent{
+    static Scanner sc = new Scanner(System.in);
+    static int a = sc.nextInt();
+    static int b = sc.nextInt();
+    static int c = sc.nextInt();
+    static int d = sc.nextInt();
+    
+  static void show(){
+        int j = a+b+c+d;
+         System.out.println(j);
+    }
+    static void show1(){
+        int j = a+b+c+d;
+         System.out.println(j);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	
+   Parent k = new Parent();
+	k.show();
+	k.show1();
+	}
+}
+========================================================================================================================== 
+10)
+// class parent 
+// void show() 
+// four variable : static add
+
+// void show1 () 
+// four variable : static add
+
+// output : 
+
+// a)constant ---------------------------------->
+
+
+// b)user input 
+class Parent{
+        static int a = 10;
+        static int b = 20;
+        static int c = 30;
+        static int d = 40;
+   
+  static void show(){
+        int j = a+b+c+d;
+         System.out.println(j);
+    }
+  static void show1(){
+        int j = a+b+c+d;
+         System.out.println(j);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	
+   Parent k = new Parent();
+	k.show();
+	k.show1();
+	}
+}
+========================================================================================================================== 
+// class parent 
+// void show() 
+// four variable : static add
+
+// void show1 () 
+// four variable : static add
+
+// output : 
+// a)constant 
+// b)user input
+
+// b)user input -------------------------------->
+
+import java.util.*;
+class Parent{
+    static Scanner sc = new Scanner(System.in);
+    static int a = sc.nextInt();
+    static int b = sc.nextInt();
+    static int c = sc.nextInt();
+    static int d = sc.nextInt();
+    
+  static void show(){
+        int j = a+b+c+d;
+         System.out.println(j);
+    }
+    static void show1(){
+        int j = a+b+c+d;
+         System.out.println(j);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	
+   Parent k = new Parent();
+	k.show();
+	k.show1();
+	}
+}
+========================================================================================================================== 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

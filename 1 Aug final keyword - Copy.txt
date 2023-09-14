@@ -1,0 +1,1042 @@
+// 1)class final and method non final output : Run
+
+
+final class A{
+    void show()
+    {
+        System.out.println("Hello");
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	new A().show();
+	}
+}
+=========================================================================
+// 2)class final and method final output : Run
+
+
+
+final class A{
+   final void show()
+    {
+        System.out.println("Hello");
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	new A().show();
+	}
+}
+=========================================================================
+// 3)class final and method final (paramter) :output :- Run
+
+constant ----------------------->
+
+final class A{
+   final void show(int a)
+    {
+        System.out.println("Hello "+a);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	new A().show(23);
+	}
+}
+=========================================================================
+// 3)class final and method final (paramter) :output 
+
+user input----------------------------->
+
+import java.util.*;
+final class A{
+   final void show(int a)
+    {
+        System.out.println("Hello "+a);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    Scanner sc = new Scanner(System.in);
+	    int a = sc.nextInt();
+    	new A().show(a);
+	}
+}
+=========================================================================
+// 4)class final and method final addition (void)
+
+constant------------------->
+
+final class A{
+   final void show()
+    {
+        int a = 10;
+        int b = 30;
+        System.out.println(a+b);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+    	new A().show();
+	}
+}
+=====================================================================
+// 4)class final and method final addition (void)
+
+user input------------------------------>
+
+import java.util.*;
+final class A{
+   final void show()
+    {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        System.out.println(a+b);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+    	new A().show();
+	}
+}
+=====================================================================
+// 5)class final and method final (paramter) addition(void)
+ 
+constant--------------------->
+
+final class A{
+   final void show(int a,int b)
+    {
+        System.out.println(a+b);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+    	new A().show(10 ,39);
+	}
+}
+
+=====================================================================
+// 5)class final and method final (paramter) addition(void) 
+
+user input------------------------------->
+
+import java.util.*;
+final class A{
+   final void show(int a,int b)
+    {
+        System.out.println(a+b);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	     Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+    	new A().show(a,b);
+	}
+}
+=====================================================================
+// 6)class final and final method return type int addition (non paramter) 
+
+constant------------------>
+
+final class A{
+   final int show()
+    {
+        int a = 10;
+        int b = 20;
+        int c = a+b;
+        System.out.println(c);
+        return c;
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+    	new A().show();
+	}
+}
+=====================================================================-=======================
+// 6)class final and final method return type int addition (non paramter) 
+
+user input ------------------------------>
+
+import java.util.*;
+final class A{
+   final int show()
+    {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = a+b;
+        System.out.println(c);
+        return c;
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+    	new A().show();
+	}
+}
+
+=====================================================================
+// 7)class final and final method return type int add(paramter) 
+
+constant ------------------------->
+
+final class A{
+   final int add(int a,int b)
+    {
+        int c = a+b;
+        System.out.println(c);
+        return c;
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+    	new A().add(20,90);
+	}
+}
+
+=====================================================================
+// 7)class final and final method return type int add(paramter) 
+
+user input --------------------------->
+
+import java.util.*;
+final class A{
+   final int add(int a,int b)
+    {
+        int c = a+b;
+        System.out.println(c);
+        return c;
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    Scanner sc = new Scanner(System.in);
+	    int a = sc.nextInt();
+	    int b = sc.nextInt();
+    	new A().add(a,b);
+	}
+}
+=====================================================================
+// 8)class final and method non final (paramter) :output 
+
+constant-------------------------->
+
+
+final class A{
+    int add(int a)
+    {
+      System.out.println("hello "+a);
+      return a;
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+    	new A().add(23);
+	}
+}
+
+=====================================================================
+// 9)class final and method final addition (void)
+
+constant-------------------------->
+
+final class A{
+    void add()
+    {
+        int a = 10;
+        int b = 20;
+      System.out.println(a+b);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+    	new A().add();
+	}
+}
+=====================================================================
+// 9)class final and method final addition (void)
+
+user input------------------------>
+
+import java.util.*;
+final class A{
+    void add()
+    {
+       Scanner sc = new Scanner(System.in);
+       int a = sc.nextInt();
+       int b = sc.nextInt();
+      System.out.println(a+b);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+    	new A().add();
+	}
+}
+====================================================================================
+// 10)class final and method final (paramter) addition(void)
+
+constant------------------------------>
+
+final class A{
+    void add(int a,int b)
+    {
+      System.out.println(a+b);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+    	new A().add(10,10);
+	}
+}
+====================================================================================
+// 10)class final and method final (paramter) addition(void)
+
+user input ---------------------------->
+
+import java.util.*;
+final class A{
+    void add(int a,int b)
+    {
+      System.out.println(a+b);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    Scanner sc = new Scanner(System.in);
+	    int a = sc.nextInt();
+	    int b = sc.nextInt();
+    	new A().add(a,b);
+	}
+}
+====================================================================================
+// 11)class final and final method return type int addition (non paramter) 
+
+constant--------------->
+
+final class A{
+    int  add()
+    {
+    int a = 10;
+    int b = 20;
+    int c = a+b;
+    System.out.println(c);
+      return c;
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+    	new A().add();
+	}
+}
+====================================================================================
+// 11)class final and final method return type int addition (non paramter) 
+
+user input --------------------------->
+
+import java.util.*;
+final class A{
+    int  add()
+    {
+   Scanner sc = new Scanner(System.in);
+   int a = sc.nextInt();
+   int b = sc.nextInt();
+   int c = a+b;
+   System.out.println(c);
+      return c;
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+    	new A().add();
+	}
+}
+====================================================================================
+// 12)class final and final method return type int add(paramter) 
+
+constant ------------------------------>
+
+final class A{
+    int  add(int a,int b)
+    {
+  
+       int c = a+b;
+       System.out.println(c);
+       return c;
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+    	new A().add(10,20);
+	}
+}
+========================================================
+// 12)class final and final method return type int add(paramter) 
+
+user input --------------------------->
+
+import java.util.*;
+final class A{
+    int  add(int a,int b)
+    {
+  
+       int c = a+b;
+       System.out.println(c);
+       return c;
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    Scanner sc = new Scanner(System.in);
+	    int a = sc.nextInt();
+	    int b = sc.nextInt();
+    	new A().add(a,b);
+	}
+}
+
+========================================================
+// 13)class final and method final 
+// can we use mulitple final in a single class 
+// show() 
+// show1() 
+// show2() 
+// show3()
+
+
+
+final class A
+{
+  final void show()
+  {
+  System.out.println("this is show method");
+  }
+  final void show1()
+  {
+  System.out.println("this is show1 method");
+  }
+  final void show2()
+  {
+  System.out.println("this is show2 method");
+  }
+  final void show3()
+  {
+  System.out.println("this is show3 method");
+  }
+  final void show4()
+  {
+  System.out.println("this is show4 method");
+  }
+}
+public class Main
+{
+  public static void main (String[]args)
+  {
+    A k = new A();
+    k.show();
+    k.show1();
+    k.show2();
+    k.show3();
+    k.show4();
+  }
+}
+================================================================================
+14)class and method final 
+can we use mulitple final in a single class 
+show() 
+show1() 
+show2() 
+show3()
+
+
+
+ class A
+{
+  final void show()
+  {
+  System.out.println("this is show method");
+  }
+  final void show1()
+  {
+  System.out.println("this is show1 method");
+  }
+  final void show2()
+  {
+  System.out.println("this is show2 method");
+  }
+  final void show3()
+  {
+  System.out.println("this is show3 method");
+  }
+  final void show4()
+  {
+  System.out.println("this is show4 method");
+  }
+}
+public class Main
+{
+  public static void main (String[]args)
+  {
+    A k = new A();
+    k.show();
+    k.show1();
+    k.show2();
+    k.show3();
+    k.show4();
+  }
+}
+======================================================================================
+15)class and method final 
+can we use mulitple final in a single class 
+show() final
+show1() 
+show2() final 
+show3()
+
+
+ class A
+{
+  final void show()
+  {
+  System.out.println("this is show method");
+  }
+   void show1()
+  {
+  System.out.println("this is show1 method");
+  }
+  final void show2()
+  {
+  System.out.println("this is show2 method");
+  }
+   void show3()
+  {
+  System.out.println("this is show3 method");
+  }
+   void show4()
+  {
+  System.out.println("this is show4 method");
+  }
+}
+public class Main
+{
+  public static void main (String[]args)
+  {
+    A k = new A();
+    k.show();
+    k.show1();
+    k.show2();
+    k.show3();
+    k.show4();
+  }
+}
+================================================================================
+// 16) 
+// class and method final 
+// can we use mulitple final in a single class 
+// show()  final (paramter)
+// show1() 
+// show2() final (paramter)
+// show3()
+
+// a)constant ---------------------------->
+
+ class A
+{
+  final void show(int a)
+  {
+  System.out.println("this is show method "+a);
+  }
+   void show1()
+  {
+  System.out.println("this is show1 method");
+  }
+  final void show2(int a)
+  {
+  System.out.println("this is show2 method "+a);
+  }
+   void show3()
+  {
+  System.out.println("this is show3 method");
+  }
+   void show4()
+  {
+  System.out.println("this is show4 method");
+  }
+}
+public class Main
+{
+  public static void main (String[]args)
+  {
+    A k = new A();
+    k.show(50);
+    k.show1();
+    k.show2(20);
+    k.show3();
+    k.show4();
+  }
+}
+================================================================================
+// 16) 
+// class and method final 
+// can we use mulitple final in a single class 
+// show()  final (paramter)
+// show1() 
+// show2() final (paramter)
+// show3()
+// a)constant 
+// b)user input 
+
+
+import java.util.*;
+class A
+{
+  final void show(int a)
+  {
+  System.out.println("this is show method "+a);
+  }
+   void show1()
+  {
+  System.out.println("this is show1 method");
+  }
+  final void show2(int b)
+  {
+  System.out.println("this is show2 method "+b);
+  }
+   void show3()
+  {
+  System.out.println("this is show3 method");
+  }
+   void show4()
+  {
+  System.out.println("this is show4 method");
+  }
+}
+public class Main
+{
+  public static void main (String[]args)
+  {
+    Scanner sc = new Scanner(System.in);
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+    
+    A k = new A();
+    k.show(a);
+    k.show1();
+    k.show2(b);
+    k.show3();
+    k.show4();
+  }
+}
+==============================================================================
+// 17)class and method final output : 
+
+class A{
+    final void show()
+    {
+        System.out.println("Hii");
+    }
+}
+public class Main{
+    public static void main(String[] args)
+    {
+        new A().show();
+    }
+}
+======================================================================
+// 18)class and method final (paramter) :output 
+// multiply 
+// div 
+
+// a)constant -------------------------------->
+
+class A{
+    final void div(int a,int b)
+    {
+        System.out.println(a/b);
+    }
+    final void mul(int a, int b)
+    {
+        System.out.println(a*b);
+    }
+}
+public class Main{
+    public static void main(String[] args)
+    {
+        A k = new A();
+        k.div(10,20);
+        k.mul(10,5);
+    }
+}
+===============================================================================
+// 18)class and method final (paramter) :output 
+// multiply 
+// div 
+
+// user input --------------------------->
+
+import java.util.*;
+class A{
+    final void div(int a,int b)
+    {
+        System.out.println(a/b);
+    }
+    final void mul(int c, int d)
+    {
+        System.out.println(c*d);
+    }
+}
+public class Main{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        int d = sc.nextInt();
+        A k = new A();
+        k.div(a,b);
+        k.mul(c,d);
+    }
+}
+=============================================================
+// 19)class and method final reverse(void)
+
+// a)constant ----------------------------->
+
+
+class A{
+    final void rev()
+    {
+        int num = 1234,rem,sum=0;
+        
+        while(num>0)
+        {
+            rem = num % 10;
+            sum = sum * 10 + rem;
+            num = num / 10;
+        }
+        System.out.println(sum);
+    }
+   
+}
+public class Main{
+    public static void main(String[] args)
+    {
+        A k = new A();
+        k.rev();
+       
+    }
+}
+=============================================================
+// 19)class and method final reverse(void)
+ 
+// b)user input--------------------------> 
+
+import java.util.*;
+class A{
+    final void rev()
+    {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        int sum = 0;
+        int rem;
+        
+        while(num>0)
+        {
+            rem = num % 10;
+            sum = sum * 10 + rem;
+            num = num / 10;
+        }
+        System.out.println(sum);
+    }
+   
+}
+public class Main{
+    public static void main(String[] args)
+    {
+        A k = new A();
+        k.rev();
+       
+    }
+}
+=============================================================================================
+// 20)class and method final (paramter) pallindrome(void) 
+
+constant------------------------->
+
+class A
+{
+  final int pallindrome(int num, int temp, int sum, int rem)
+  {
+    temp = num;
+
+    while (num > 0)
+      {
+	rem = num % 10;
+	sum = sum * 10 + rem;
+	num = num / 10;
+      }
+    if (temp == sum)
+      {
+	System.out.print ("this is pallindrome number");
+      }
+    else
+      {
+	System.out.print ("this is not pallindrome");
+      }
+      return num;
+  }
+
+}
+
+public class Main
+{
+  public static void main (String[]args)
+  {
+    
+    A k = new A ();
+      k.pallindrome(12421,0,0,0);
+
+  }
+}
+
+=============================================================
+// 20)class and method final (paramter) pallindrome(void) 
+
+user input ------------------------->
+
+import java.util.*;
+class A
+{
+  final int pallindrome(int num, int temp, int sum, int rem)
+  {
+    temp = num;
+
+    while (num > 0)
+      {
+	rem = num % 10;
+	sum = sum * 10 + rem;
+	num = num / 10;
+      }
+    if (temp == sum)
+      {
+	System.out.print ("this is pallindrome number");
+      }
+    else
+      {
+	System.out.print ("this is Not pallindrome");
+      }
+      return num;
+  }
+
+}
+
+public class Main
+{
+  public static void main (String[]args)
+  {
+    Scanner sc = new Scanner (System.in);
+    int num = sc.nextInt ();
+    A k = new A ();
+      k.pallindrome (num,0,0,0);
+
+  }
+}
+====================================================================================
+// 21)class and final method return type int armstrong(non paramter) 
+
+constant -------------------------------->
+
+class A
+{
+  final int armstrong ()
+  {
+    int num = 653, rem, sum = 0;
+    int temp = num;
+
+    while (num > 0)
+      {
+	rem = num % 10;
+	sum = sum + rem * rem * rem;
+	num = num / 10;
+      }
+    if (temp == sum)
+      {
+	System.out.print ("this is armstrong number");
+      }
+    else
+      {
+	System.out.print ("this is Not armstrong pallindrome");
+      }
+    return num;
+  }
+
+}
+
+public class Main
+{
+  public static void main (String[]args)
+  {
+
+    A k = new A ();
+      k.armstrong ();
+
+  }
+}
+========================================================================================
+// 21)class and final method return type int armstrong(non paramter) 
+
+user input --------------------------->
+
+import java.util.*;
+class A
+{
+  final int armstrong ()
+  {
+    Scanner sc = new Scanner(System.in);
+    int num = sc.nextInt();
+    int sum = 0;
+    int rem;
+    int temp = num;
+
+    while (num > 0)
+      {
+	rem = num % 10;
+	sum = sum + rem * rem * rem;
+	num = num / 10;
+      }
+    if (temp == sum)
+      {
+	System.out.print ("this is armstrong number");
+      }
+    else
+      {
+	System.out.print ("Not armstrong ");
+      }
+    return num;
+  }
+
+}
+
+public class Main
+{
+  public static void main (String[]args)
+  {
+
+    A k = new A ();
+      k.armstrong ();
+
+  }
+}
+
+
+========================================================================================
+22)class and final method return type int factorial(paramter) 
+
+
+
+class A
+{
+  final int factorial(int num,int fact,int i)
+  {
+      for(i=1;i<=num;i++)
+        {
+            fact = fact*i;
+        }
+      System.out.println(fact);
+      return fact;
+  }
+
+}
+
+public class Main
+{
+  public static void main (String[]args)
+  {
+    A k = new A ();
+      k.factorial(5,1,1);
+
+  }
+}
+
+===============================================================
+// 22)class and final method return type int factorial(paramter) 
+
+user input ----------------------------->
+
+import java.util.*;
+class A
+{
+  final int factorial(int num,int fact,int i)
+  {
+      for(i=1;i<=num;i++)
+        {
+            fact = fact*i;
+        }
+      System.out.println(fact);
+      return fact;
+  }
+
+}
+
+public class Main
+{
+  public static void main (String[]args)
+  {
+      Scanner sc = new Scanner(System.in);
+      int num = sc.nextInt();
+    A k = new A ();
+      k.factorial(num,1,1);
+
+  }
+}
+====================================================================
+
+

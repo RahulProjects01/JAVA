@@ -1,0 +1,2390 @@
+ 1) non paramteriesd return type void 
+ A interface
+ method 1 
+ method 2 
+
+ B class
+ define 
+ 1 add 
+ 2 sub 
+ a)constant ------------------>
+
+
+interface A {
+    void show();
+
+    void show2();
+}
+
+class B implements A {
+    public void show() {
+        int a=2,b =2;
+        System.out.println(a + b);
+    }
+
+    public void show2() {
+        int a=3, b=4;
+        System.out.println(a - b);
+    }
+}
+
+public class Ab {
+    public static void main(String[] args) {
+        B k = new B();
+        k.show();
+        k.show2();
+    }
+}
+=========================================================================================================================
+1) non paramteriesd return type void 
+A interface
+method 1 
+method 2 
+
+B class
+define 
+1 add 
+2 sub 
+b)user input -------------------------------->
+
+import java.util.*;
+
+interface A {
+    void show();
+
+    void show2();
+}
+
+class B implements A {
+    public void show() {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        System.out.println(a + b);
+    }
+
+    public void show2() {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        System.out.println(a - b);
+    }
+}
+
+public class Ab {
+    public static void main(String[] args) {
+        B k = new B();
+        k.show();
+        k.show2();
+    }
+}
+=========================================================================================================
+// 2) non paramteriesd return type int
+// A interface
+// method 1 
+// method 2 
+// method 3 
+// method 4 
+// method 5 
+
+// B class
+// define 
+// 1 add 
+// 2 sub 
+// a)constant ----------------------------------->
+
+
+interface A {
+    int show();
+
+    int show2();
+}
+
+class B implements A {
+    public int show() {
+        int a = 23;
+        int b = 23;
+        int c = a + b;
+        System.out.println(c);
+        return c;
+    }
+
+    public int show2() {
+        int c = 23,d=54;
+        int e = c - d;
+        System.out.println(e);
+        return e;
+    }
+}
+
+public class Ab {
+    public static void main(String[] args) {
+        B k = new B();
+        k.show();
+        k.show2();
+    }
+}
+
+=======================================================================================================================
+// 2) non paramteriesd return type int
+// A interface
+// method 1 
+// method 2 
+// method 3 
+// method 4 
+// method 5 
+
+// B class
+// define 
+// 1 add 
+// 2 sub 
+// b)user input -------------------------------->
+
+import java.util.*;
+
+interface A {
+    int show();
+
+    int show2();
+}
+
+class B implements A {
+    public int show() {
+
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = a + b;
+        System.out.println("add: " + c);
+        return c;
+    }
+
+    public int show2() {
+        Scanner sc = new Scanner(System.in);
+        int c = sc.nextInt();
+        int d = sc.nextInt();
+        int e = c - d;
+        System.out.println("sub: " + e);
+        return e;
+    }
+}
+
+public class AD {
+    public static void main(String[] args) {
+        B k = new B();
+        k.show();
+        k.show2();
+    }
+}
+===================================================================================================
+// 3)  paramteriesd return type int
+// A interface
+// method 1 
+// method 2 
+// method 3 
+// method 4 
+// method 5 
+
+// B class
+// define 
+// 1 add 
+// 2 sub 
+// a)constant ---------------------------------------->
+
+
+interface A {
+    int show(int a, int b);
+
+    int show2(int c, int d);
+}
+
+class B implements A {
+
+    public int show(int a, int b) {
+        int c = a + b;
+        System.out.println("add: " + c);
+        return c;
+    }
+
+    public int show2(int c, int d) {
+        int e = c - d;
+        System.out.println("sub: " + e);
+        return e;
+
+    }
+}
+
+public class Ab {
+    public static void main(String[] args) 
+    {
+        B k = new B();
+        k.show(2, 6);
+        k.show2(2, 4);
+    }
+}
+==================================================================================================================
+// 3)  paramteriesd return type int
+// A interface
+// method 1 
+// method 2 
+// method 3 
+// method 4 
+// method 5 
+
+// B class
+// define 
+// 1 add 
+// 2 sub  
+// b)user input -----------------------------> 
+import java.util.*;
+
+interface A {
+    int show(int a, int b);
+    int show2(int c, int d);
+}
+
+class B implements A {
+
+    public int show(int a, int b) {
+        int c = a + b;
+        System.out.println("add: " + c);
+        return c;
+    }
+
+    public int show2(int c, int d) {
+        int e = c - d;
+        System.out.println("sub: " + e);
+        return e;
+    }
+}
+
+public class Ab {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        int d = sc.nextInt();
+        B k = new B();
+        k.show(a, b);
+        k.show2(c, d);
+    }
+}
+===================================================================================================================
+
+// 4) paramteriesd return type void
+// A interface
+// method 1 
+// method 2 
+// method 3 
+// method 4 
+// method 5 
+
+// B class
+// define 
+// 1 add 
+// 2 sub 
+// a)constant ----------------------------->
+
+
+interface A {
+    void show1(int a, int b);
+
+    void show2(int c, int d);
+
+    void show3(int e, int f);
+
+    void show4(int g, int h);
+
+    void show5(int i, int j);
+}
+
+class B implements A {
+    public void show1(int a, int b) {
+        int c = a + b;
+        System.out.println(c);
+    }
+
+    public void show2(int a, int b) {
+        int c = a - b;
+        System.out.println(c);
+    }
+
+    public void show3(int a, int b) {
+        int c = a / b;
+        System.out.println(c);
+    }
+
+    public void show4(int a, int b) {
+        int c = a % b;
+        System.out.println(c);
+    }
+
+    public void show5(int a, int b) {
+        int c = a - b;
+        System.out.println(c);
+    }
+}
+
+public class AD {
+    public static void main(String[] args) {
+        B k = new B();
+        k.show1(3, 4);
+        k.show2(9, 4);
+        k.show3(5, 4);
+        k.show4(3, 7);
+        k.show5(3, 8);
+    }
+}
+
+=========================================================================================================
+
+// 4) paramteriesd return type void
+// A interface
+// method 1 
+// method 2 
+// method 3 
+// method 4 
+// method 5 
+
+// B class
+// define 
+// 1 add 
+// 2 sub 
+// b)user input --------------------------------->
+
+import java.util.Scanner;
+
+interface A {
+    void show1(int a, int b);
+
+    void show2(int d, int e);
+
+    void show3(int f, int g);
+
+    void show4(int h, int i);
+
+    void show5(int j, int k);
+}
+
+class B implements A {
+    public void show1(int a, int b) {
+        int c = a + b;
+        System.out.println("addition:" + c);
+    }
+
+    public void show2(int d, int e) {
+        int c = d - e;
+        System.out.println("subtraction:" + c);
+    }
+
+    public void show3(int f, int g) {
+        int c = f + g;
+        System.out.println("addition:" + c);
+
+    }
+
+    public void show4(int h, int i) {
+        int c = h - i;
+        System.out.println("subtraction:" + c);
+    }
+
+    public void show5(int j, int k) {
+        int c = j + k;
+        System.out.println("addition:" + c);
+    }
+}
+
+public class AD {
+    public static void main(String[] args) {
+
+        B s = new B();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a:");
+        int a = sc.nextInt();
+        System.out.println("enter the value of b:");
+        int b = sc.nextInt();
+        System.out.println("enter the value of d:");
+        int d = sc.nextInt();
+        System.out.println("enter the value of e:");
+        int e = sc.nextInt();
+        System.out.println("enter the value of f:");
+        int f = sc.nextInt();
+        System.out.println("enter the value of g:");
+        int g = sc.nextInt();
+        System.out.println("enter the value of h:");
+        int h = sc.nextInt();
+        System.out.println("enter the value of i:");
+        int i = sc.nextInt();
+        System.out.println("enter the value of j:");
+        int j = sc.nextInt();
+        System.out.println("enter the value of k:");
+        int k = sc.nextInt();
+        B t = new B();
+        t.show1(a, b);
+        t.show2(d, e);
+        t.show3(f, g);
+        t.show4(h, i);
+        t.show5(j, k);
+    }
+}
+
+=========================================================================================================
+// 5) 
+// A interface 
+// show() 
+// B interface 
+// method name show() 
+
+// class implement 
+
+
+
+interface A {
+    void show();
+}
+
+interface B {
+    void name();
+}
+
+class C implements A, B {
+    public void show() 
+    {
+        System.out.println("this is show method");
+    }
+    public void name()
+    {
+        System.out.println("this is name method");
+    }
+}
+
+public class AD {
+    public static void main(String[] args) 
+    {
+     C k = new C();
+     k.show();
+     k.name();
+    }
+}
+
+
+=============================================================================================================================
+
+//6) A interface
+method parameter and int(define)
+show()
+B interface
+method parameter and int(define)
+method show1()
+class C implements
+a)constant input
+
+interface A
+{
+    int show(int a);
+}
+interface B
+{
+    int show1(int b);
+}
+class C implements A,B
+{
+    public int show(int a)
+    {
+        System.out.println("the value of a:"+a);
+        return a;
+    }
+    public int show1(int b)
+    {
+        System.out.println("the value of b:"+b);
+        return b;
+    }
+
+}
+public class Ab
+{
+    public static void main(String[] args)
+    {
+C k=new C();
+k.show(6);
+k.show1(7);
+    }
+}
+=============================================================================================================================
+//6) A interface
+method parameter and int(define)
+show()
+B interface
+method parameter and int(define)
+method show1()
+class C implements
+b)user input
+
+import java.util.*;
+interface A
+{
+    int show(int a);
+}
+interface B
+{
+    int show1(int b);
+}
+class C implements A,B
+{
+    public int show(int a)
+    {
+        System.out.println("the value of a:"+a);
+        return a;
+    }
+    public int show1(int b)
+    {
+        System.out.println("the value of b:"+b);
+        return b;
+    }
+
+}
+public class AD
+{
+    public static void main(String[] args)
+    {
+
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the value of a:");
+int a=sc.nextInt();
+System.out.println("enter the value of b:");
+int b=sc.nextInt();
+C k=new C();
+k.show(a);
+k.show1(b);
+    }
+}
+========================================================================================================================
+
+//7)
+method non parameter void
+ A interface
+add()
+B interface
+sub()
+class C implements
+a)constant input -------------------------------------->
+
+
+
+interface A
+{
+    void add();
+}
+interface B
+{
+    void sub();
+}
+class C implements A,B
+{
+    public void add()
+    {
+        int a=45,b=34,c;
+        c=a+b;
+        System.out.println("addition:"+c);
+    }
+    public void sub()
+    {
+        int a=34,b=12,c;
+        c=a-b;
+        System.out.println("subtraction:"+c);
+    }
+
+}
+public class AD
+{
+    public static void main(String[] args)
+    {
+C k=new C();
+k.add();
+k.sub();
+    }
+}
+=============================================================================================================================
+7//)
+method non parameter void
+ A interface
+add()
+B interface
+sub()
+class C implements
+b)user input------------------------------------------>
+
+import java.util.*;
+interface A
+{
+    void add();
+}
+interface B
+{
+    void sub();
+}
+class C implements A,B
+{
+    public void add()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the value of a:");
+        int a=sc.nextInt();
+         System.out.println("enter the value of b:");
+        int b=sc.nextInt();
+        int c;
+        c=a+b;
+        System.out.println("addition:"+c);
+    }
+    public void sub()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the value of a:");
+        int a=sc.nextInt();
+         System.out.println("enter the value of b:");
+        int b=sc.nextInt();
+        int c;
+        c=a-b;
+        System.out.println("subtraction:"+c);
+    }
+
+}
+public class Ab
+{
+    public static void main(String[] args)
+    {
+C k=new C();
+k.add();
+k.sub();
+    }
+}
+=============================================================================================================================
+
+// 8) param void 
+// interface A 
+// add() 
+
+// interface B 
+// sub() 
+// class C 
+// a)constant ------------------------------->
+
+
+interface A {
+    void add();
+}
+
+interface B {
+    void sub();
+}
+
+class C implements A, B {
+    public void add() {
+        int a = 23;
+        int b = 43;
+        int h = a + b;
+        System.out.println(h);
+    }
+
+    public void sub() {
+        int k = 12;
+        int l = 23;
+        int c = k - l;
+        System.out.println(c);
+    }
+}
+
+public class AD {
+    public static void main(String[] args) {
+        C k = new C();
+        k.add();
+        k.sub();
+    }
+}
+
+=============================================================================================================================
+// 8) param void 
+// interface A 
+// add() 
+
+// interface B 
+// sub() 
+// class C 
+// b)user input------------------------------->
+
+
+import java.util.*;
+
+interface A {
+    void add(int a, int b);
+}
+
+interface B {
+    void sub(int k, int l);
+}
+
+class C implements A, B {
+    public void add(int a, int b) {
+        int c = a + b;
+        System.out.println("add " + c);
+    }
+
+    public void sub(int k, int l) {
+        int j = k - l;
+        System.out.println("Sub " + j);
+    }
+}
+
+public class AD {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int k = sc.nextInt();
+        int l = sc.nextInt();
+        C r = new C();
+        r.add(a, b);
+        r.sub(k, l);
+    }
+}
+=============================================================================================================================
+// 9) non param int
+// interface A 
+// add() 
+
+// interface B 
+// sub() 
+// class C 
+// a)constant----------------------------> 
+
+
+interface A {
+    int add(int a, int b);
+}
+
+interface B {
+    int sub(int k, int l);
+}
+
+class C implements A, B {
+    public int add(int a, int b) {
+
+        int h = a + b;
+        System.out.println(h);
+        return h;
+    }
+
+    public int sub(int k, int l) {
+
+        int c = k - l;
+        System.out.println(c);
+        return c;
+    }
+}
+
+public class AD {
+    public static void main(String[] args) {
+        C k = new C();
+        k.add(2, 4);
+        k.sub(5, 6);
+    }
+}
+=============================================================================================================================
+// 9) non param int
+// interface A 
+// add() 
+
+// interface B 
+// sub() 
+// class C 
+// b)user input------------------------------>
+
+ 
+import java.util.*;
+
+interface A {
+    int add(int a, int b);
+}
+
+interface B {
+    int sub(int k, int l);
+}
+
+class C implements A, B {
+    public int add(int a, int b) {
+
+        int h = a + b;
+        System.out.println(h);
+        return h;
+    }
+
+    public int sub(int k, int l) {
+
+        int c = k - l;
+        System.out.println(c);
+        return c;
+    }
+}
+
+public class AD {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int k = sc.nextInt();
+        int l = sc.nextInt();
+        C j = new C();
+        j.add(a, b);
+        j.sub(k, l);
+    }
+}
+=============================================================================================================================
+// 10) param int 
+// interface A 
+// add() 
+
+// interface B 
+// sub() 
+// class C 
+// a)constant ------------------------------>
+
+
+interface A {
+    int add(int a, int b);
+}
+
+interface B {
+    int sub(int k, int l);
+}
+
+class C implements A, B {
+    public int add(int a, int b) {
+        int c = a + b;
+        System.out.println(c);
+        return c;
+    }
+
+    public int sub(int k, int l) {
+        int h = k - l;
+        System.out.println(h);
+        return h;
+    }
+}
+
+public class AD {
+    public static void main(String[] args) {
+        C t = new C();
+        t.add(3, 5);
+        t.sub(5, 44);
+    }
+}
+
+=============================================================================================================================
+// 10) param int 
+// interface A 
+// add() 
+
+// interface B 
+// sub() 
+// class C 
+ user input ---------------------->
+
+
+
+import java.util.*;
+
+interface A {
+    int add(int a, int b);
+}
+
+interface B {
+    int sub(int k, int l);
+}
+
+class C implements A, B {
+    public int add(int a, int b) {
+        int c = a + b;
+        System.out.println(c);
+        return c;
+    }
+
+    public int sub(int k, int l) {
+        int h = k - l;
+        System.out.println(h);
+        return h;
+    }
+}
+
+public class AD {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int k = sc.nextInt();
+        int l = sc.nextInt();
+        C t = new C();
+        t.add(a, b);
+        t.sub(k, l);
+    }
+}
+=============================================================================================================================
+// 11) 
+// non param void 
+// interface A 
+// add() 
+// non param int
+// interface B 
+// sub() 
+// class C 
+// a)constant --------------------------------------->
+
+
+interface A {
+    void add();
+}
+
+interface B {
+    int sub();
+}
+
+class C implements A, B {
+    public void add() {
+        int a = 45, b = 34, c;
+        c = a + b;
+        System.out.println("addition:" + c);
+      
+    }
+
+    public int sub() {
+        int a = 34, b = 12, c;
+        c = a - b;
+        System.out.println("subtraction:" + c);
+        return c;
+    }
+
+}
+
+public class AD {
+    public static void main(String[] args) {
+        C k = new C();
+        k.add();
+        k.sub();
+    }
+}
+=============================================================================================================================
+// 11) 
+// non param void 
+// interface A 
+// add() 
+// non param int
+// interface B 
+// sub() 
+// class C 
+// b)user input -------------------------------->
+
+
+import java.util.*;
+
+interface A {
+    void add();
+}
+
+interface B {
+    int sub();
+}
+
+class C implements A, B {
+    public void add() {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = a + b;
+        System.out.println("addition:" + c);
+        
+    }
+
+    public int sub() {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = a - b;
+        System.out.println("subtraction:" + c);
+        return c;
+    }
+
+}
+
+public class AD {
+    public static void main(String[] args) {
+
+        C k = new C();
+        k.add();
+        k.sub();
+    }
+}
+
+=============================================================================================================================
+// 12)
+// non param void 
+// interface A 
+// add() 
+//  param int
+// interface B 
+// sub() 
+// class C 
+
+
+// a)constant ------------------------------->
+
+
+
+interface A {
+    void add();
+}
+
+interface B {
+    int sub(int a,int b);
+}
+
+class C implements A, B {
+    public void add() {
+        int a = 45, b = 34, c;
+        c = a + b;
+        System.out.println("addition:" + c);
+    }
+
+    public int sub(int a,int b) {
+        int c = a+b;
+        System.out.println("subtraction:" + a+b);
+        return c;
+    }
+}
+
+public class AD {
+    public static void main(String[] args) {
+        C k = new C();
+        k.add();
+        k.sub(4,7);
+    }
+}
+
+=============================================================================================================================
+// 12)
+// non param void 
+// interface A 
+// add() 
+//  param int
+// interface B 
+// sub() 
+// class C 
+
+// b)user input----------------------------->  
+
+import java.util.*;
+
+interface A {
+    void add();
+}
+
+interface B {
+    int sub(int a, int b);
+}
+
+class C implements A, B {
+    public void add() {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = a + b;
+        System.out.println("addition:" + c);
+    }
+
+    public int sub(int a, int b) {
+
+        int c = a - b;
+        System.out.println("subtraction:" + c);
+        return c;
+    }
+
+}
+
+public class AD {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+
+        C k = new C();
+        k.add();
+        k.sub(a, b);
+    }
+}
+
+=============================================================================================================================
+
+// 13)
+// param void 
+// interface A 
+// add() 
+// non param int
+// interface B 
+// sub() 
+// class C 
+
+// a)constant------------------------------>
+ 
+  
+interface A {
+    void add(int a, int b);
+}
+
+interface B {
+    int sub();
+}
+
+class C implements A, B {
+    public void add(int a, int b) {
+        int c = a + b;
+        System.out.println(c);
+    }
+
+    public int sub() {
+        int a = 23;
+        int b = 34;
+        int c = a - b;
+        System.out.println(c);
+        return c;
+    }
+}
+
+public class AD {
+    public static void main(String[] args) {
+        C h = new C();
+        h.add(3, 5);
+        h.sub();
+    }
+}
+
+=============================================================================================================================
+
+// 13)
+// param void 
+// interface A 
+// add() 
+// non param int
+// interface B 
+// sub() 
+// class C 
+
+
+// b)user input----------------------------->
+
+
+import java.util.*;
+
+interface A {
+    void add(int a, int b);
+}
+
+interface B {
+    int sub();
+}
+
+class C implements A, B {
+    public void add(int a, int b) {
+        int c = a + b;
+        System.out.println(c);
+    }
+
+    public int sub() {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = a - b;
+        System.out.println(c);
+        return c;
+    }
+}
+
+public class AD {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        C h = new C();
+        h.add(a, b);
+        h.sub();
+    }
+}
+
+=============================================================================================================================
+// 14)
+// param int
+// interface A 
+// add() 
+// non param int
+// interface B 
+// sub() 
+// class C 
+
+// a)constant------------------------> 
+
+
+
+interface A {
+    int add(int a, int b);
+}
+
+interface B {
+    int sub();
+}
+
+class C implements A, B {
+    public int add(int a, int b) {
+        int c = a + b;
+        System.out.println(c);
+        return c;
+    }
+
+    public int sub() {
+        int a = 23;
+        int b = 34;
+        int c = a - b;
+        System.out.println(c);
+        return c;
+    }
+}
+
+public class AD {
+    public static void main(String[] args) {
+        C h = new C();
+        h.add(3, 5);
+        h.sub();
+    }
+}
+=============================================================================================================================
+
+// 14)
+// param int
+// interface A 
+// add() 
+// non param int
+// interface B 
+// sub() 
+// class C 
+
+
+// b)user input ---------------------------------> 
+
+import java.util.*;
+
+interface A {
+    int add(int a, int b);
+}
+
+interface B {
+    int sub();
+}
+
+class C implements A, B {
+    public int add(int a, int b) {
+        int c = a + b;
+        System.out.println(c);
+        return c;
+    }
+
+    public int sub() {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = a - b;
+        System.out.println(c);
+        return c;
+    }
+}
+
+public class AD {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        C h = new C();
+        h.add(a, b);
+        h.sub();
+    }
+}
+
+=============================================================================================================================
+// extends 
+// 15)
+// param void 
+// interface A 
+// add() 
+// param void
+// interface B 
+// sub() 
+// class C 
+
+// a)constant --------------------------------->
+
+interface A {
+    void add(int a, int b);
+}
+
+interface B extends A {
+    void sub(int k, int l);
+}
+
+class C implements B {
+    public void add(int a, int b) {
+        int h = a + b;
+        System.out.println(h);
+    }
+
+    public void sub(int k, int l) {
+        int c = k - l;
+        System.out.println(c);
+    }
+}
+
+public class AD {
+    public static void main(String[] args) {
+        C k = new C();
+        k.add(2, 4);
+        k.sub(5, 6);
+    }
+}
+
+=============================================================================================================================
+
+// extends 
+// 15)
+// param void 
+// interface A 
+// add() 
+// param void
+// interface B 
+// sub() 
+// class C 
+
+// USER INPUT --------------------------->
+
+
+import java.util.*;
+
+interface A {
+    void add(int a, int b);
+}
+
+interface B extends A {
+    void sub(int k, int l);
+}
+
+class C implements B {
+    public void add(int a, int b) {
+        int h = a + b;
+        System.out.println(h);
+    }
+
+    public void sub(int k, int l) {
+        int c = k - l;
+        System.out.println(c);
+    }
+}
+
+public class AD {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int k = sc.nextInt();
+        int l = sc.nextInt();
+        C j = new C();
+        j.add(a, b);
+        j.sub(k, l);
+    }
+}
+=============================================================================================================================
+
+// 16)
+// non param int
+// interface A 
+// add() 
+// non param int
+// interface B 
+// sub() 
+// class C 
+
+// a)constant -------------------------->
+
+
+
+
+interface A {
+    int add();
+}
+
+interface B extends A {
+    int sub();
+}
+
+class C implements B {
+    public int add() {
+        int a = 24;
+        int b = 34;
+        int h = a + b;
+        System.out.println(h);
+        return h;
+    }
+
+    public int sub() {
+        int k = 23;
+        int l = 43;
+        int c = k - l;
+        System.out.println(c);
+        return c;
+    }
+}
+
+public class AD {
+    public static void main(String[] args) {
+        C j = new C();
+        j.add();
+        j.sub();
+    }
+}
+
+=============================================================================================================================
+// 16)
+// non param int
+// interface A 
+// add() 
+// non param int
+// interface B 
+// sub() 
+// class C 
+
+
+// b)user input----------------------------------->
+
+import java.util.*;
+
+interface A {
+    int add();
+}
+
+interface B extends A {
+    int sub();
+}
+
+class C implements B {
+    public int add() {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int h = a + b;
+        System.out.println(h);
+        return h;
+    }
+
+    public int sub() {
+        Scanner sc = new Scanner(System.in);
+        int k = sc.nextInt();
+        int l = sc.nextInt();
+        int c = k - l;
+        System.out.println(c);
+        return c;
+    }
+}
+
+public class AD {
+    public static void main(String[] args) {
+        C j = new C();
+        j.add();
+        j.sub();
+    }
+}
+=============================================================================================================================
+17)
+// param int
+// interface A 
+// add() 
+// param int
+// interface B 
+// sub() 
+// class C 
+
+// a)constant----------------------------------------> 
+
+
+interface A {
+    int add(int a, int b);
+}
+
+interface B extends A {
+    int sub(int k, int l);
+}
+
+class C implements B {
+    public int add(int a, int b) {
+        int h = a + b;
+        System.out.println(h);
+        return h;
+    }
+
+    public int sub(int k, int l) {
+        int c = k - l;
+        System.out.println(c);
+        return c;
+    }
+}
+
+public class AD {
+    public static void main(String[] args) 
+    {
+        C j = new C();
+        j.add(3, 44);
+        j.sub(23, 43);
+    }
+}
+
+=============================================================================================================================
+17)
+// param int
+// interface A 
+// add() 
+// param int
+// interface B 
+// sub() 
+// class C 
+
+ 
+// b)user input--------------------------------> 
+
+import java.util.*;
+
+interface A {
+    int add(int a, int b);
+}
+
+interface B extends A {
+    int sub(int k, int l);
+}
+
+class C implements B {
+    public int add(int a, int b) 
+    {
+        int h = a + b;
+        System.out.println(h);
+        return h;
+    }
+
+    public int sub(int k, int l) 
+    {
+        int c = k - l;
+        System.out.println(c);
+        return c;
+    }
+}
+
+public class AD {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int k = sc.nextInt();
+        int l = sc.nextInt();
+
+        C j = new C();
+        j.add(a, b);
+        j.sub(k, l);
+    }
+}
+
+=============================================================================================================================
+
+// 18)
+// non param void 
+// interface A 
+// add() 
+// non param void
+// interface B 
+// sub() 
+// class C 
+
+// a)constant ---------------------------------------->
+
+
+interface A {
+    void add();
+}
+
+interface B extands A{
+    void sub();
+}
+
+class C implements  B {
+    public void add() {
+        int a = 45, b = 34, c;
+        c = a + b;
+        System.out.println("addition:" + c);
+    }
+
+    public void sub() {
+        int a = 45, b = 34, c;
+        c = a + b;
+        System.out.println("sub:" + c);
+    }
+}
+
+public class AD {
+    public static void main(String[] args) {
+        C k = new C();
+        k.add();
+        k.sub();
+    }
+}
+
+=============================================================================================================================
+// 18)
+// non param void 
+// interface A 
+// add() 
+// non param void
+// interface B 
+// sub() 
+// class C 
+
+
+// b)user input --------------------------------------->
+
+
+import java.util.*;
+
+interface A {
+    void add();
+}
+
+interface B extands A{
+    void sub();
+}
+
+class C implements B {
+    public void add() {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = a + b;
+        System.out.println("addition:" + c);
+    }
+
+    public void sub() {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = a + b;
+        System.out.println("sub:" + c);
+    }
+}
+
+public class AD {
+    public static void main(String[] args) {
+        C k = new C();
+        k.add();
+        k.sub();
+    }
+}
+
+=============================================================================================================================
+
+// 19)
+// non param void 
+// interface A 
+// add() 
+// multi() define 
+// non param void
+// interface B 
+// sub() 
+// div() define 
+// class C 
+
+// a)constant -------------------------->
+
+
+interface A {
+    void add();
+
+    default void multi() {
+        int a = 23, b = 23;
+        System.out.println(a * b);
+    }
+}
+
+interface B extends A {
+    void sub();
+
+    default void div() {
+        int a = 23;
+        int b = 54;
+        System.out.println(a / b);
+    }
+}
+
+class C implements B {
+    public void add() {
+        int a = 23;
+        int b = 54;
+        System.out.println(a + b);
+    }
+
+    public void sub() {
+        int a = 23;
+        int b = 54;
+        System.out.println(a - b);
+    }
+
+}
+
+public class AD {
+    public static void main(String[] args) {
+        C k = new C();
+        k.sub();
+        k.multi();
+        k.div();
+        k.add();
+    }
+}
+=============================================================================================================================
+// 19)
+// non param void 
+// interface A 
+// add() 
+// multi() define 
+// non param void
+// interface B 
+// sub() 
+// div() define 
+// class C 
+
+// a)user input ------------------------------->
+
+import java.util.*;
+
+interface A {
+    void add();
+
+    default void multi() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter value of a: ");
+        int a = sc.nextInt();
+        System.out.println("Enter value of b: ");
+        int b = sc.nextInt();
+        int c = a * b;
+        System.out.println("multi: " + c);
+    }
+}
+
+interface B extends A {
+    void sub();
+
+    default void div() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter value of a: ");
+        int a = sc.nextInt();
+        System.out.println("Enter value of b: ");
+        int b = sc.nextInt();
+        int c = a / b;
+        System.out.println("dev: " + c);
+    }
+}
+
+class C implements B {
+    public void add() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter value of a: ");
+        int a = sc.nextInt();
+        System.out.println("Enter value of b: ");
+        int b = sc.nextInt();
+        int c = a + b;
+        System.out.println("add: " + c);
+    }
+
+    public void sub() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter value of a: ");
+        int a = sc.nextInt();
+        System.out.println("Enter value of b: ");
+        int b = sc.nextInt();
+        int c = a - b;
+        System.out.println("sub: " + c);
+    }
+
+}
+
+public class AD {
+    public static void main(String[] args) {
+        C k = new C();
+        k.sub();
+        k.multi();
+        k.div();
+        k.add();
+    }
+}
+=============================================================================================================================
+// 20)
+//  param void 
+// interface A 
+// add() 
+// multi() define 
+//  param void
+// interface B 
+// sub() 
+// div() define 
+// class C 
+
+// a)constant ----------------------------------------> 
+
+interface A {
+    void add(int a,int b);
+    void multi(int a,int b);
+}
+
+interface B extands A{
+    void sub(int a,int b);
+    void mod(int a,int b);
+}
+
+class C implements B {
+    public void add(int a,int b) {
+        int c = a + b;
+        System.out.println("addition:" + c);
+    }
+    public void multi(int a,int b) {
+        int c = a * b;
+        System.out.println("addition:" + c);
+    }
+    public void mod(int a,int b) {
+        int c = a % b;
+        System.out.println("addition:" + c);
+    }
+
+    public void sub(int a,int b) {
+        int c = a + b;
+        System.out.println("sub:" + c);
+    }
+}
+
+public class AD {
+    public static void main(String[] args) {
+        C k = new C();
+        k.add(23,65);
+        k.sub(34,87);
+        k.mod(65,78);
+        k.multi(78,90);
+    }
+}
+
+=============================================================================================================================
+20)
+non param void 
+interface A 
+add() 
+multi()
+non param void
+interface B 
+sub() 
+div()
+class C 
+
+
+b)user input---------------------------->
+
+
+import java.util.*;
+
+interface A {
+    void add(int a, int b);
+
+    void multi(int a, int b);
+}
+
+interface B extands A {
+    void sub(int a, int b);
+
+    void mod(int a, int b);
+}
+
+class C implements B {
+    public void add(int a, int b) {
+        int c = a + b;
+        System.out.println("addition:" + c);
+    }
+
+    public void multi(int a, int b) {
+        int c = a * b;
+        System.out.println("addition:" + c);
+    }
+
+    public void mod(int a, int b) {
+        int c = a % b;
+        System.out.println("addition:" + c);
+    }
+
+    public void sub(int a, int b) {
+        int c = a + b;
+        System.out.println("sub:" + c);
+    }
+}
+
+public class AD {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        C k = new C();
+        k.add(a, b);
+        k.sub(a, b);
+        k.mod(a, b);
+        k.multi(a, b);
+    }
+}
+
+=============================================================================================================================
+
+Qus 21 :-
+two interface : classes 
+A interface 
+method paramter and int (define ) 
+show() 
+
+B interface 
+method paramter and int (define ) 
+show1() 
+
+a)constant 
+---------------------------->
+interface A{
+    default int add(int a, int b){
+        System.out.println("add :"+(a+b));
+        return a+b;
+    }
+    void show();
+}
+interface B extends A{
+    default int sub(int a, int b){
+        System.out.println("sub :"+(a-b));
+        return a-b;
+    }
+    void show1();
+}
+class C implements B{
+    public void show(){
+        System.out.println("show");
+    }
+    public void show1(){
+        System.out.println("show1");
+    }
+}
+public class Main{
+    public static void main(String[] args) {
+        C k = new C();
+        k.add(5, 5);
+        k.show();
+        k.sub(10, 5);
+        k.show1();
+        A k1 = new A() {
+            public void show(){
+                System.out.println("interface class of A");
+            }
+        };
+        k1.show();
+        B k2 = new B() {
+            public void show1(){
+                System.out.println("interface class of B");
+            }
+            public void show(){
+               System.out.println("interface class of A");
+            }
+        };
+        k2.show1();
+        k2.show();
+    }
+}
+=============================================================================================================================
+
+b)user input 
+------------------------->
+import java.util.Scanner;
+
+interface A{
+    default int add(int a, int b){
+        System.out.println("add :"+(a+b));
+        return a+b;
+    }
+    void show();
+}
+interface B extends A{
+    default int sub(int a, int b){
+        System.out.println("sub :"+(a-b));
+        return a-b;
+    }
+    void show1();
+}
+class C implements B{
+    public void show(){
+        System.out.println("show");
+    }
+    public void show1(){
+        System.out.println("show1");
+    }
+}
+public class Main{
+    public static void main(String[] args) {
+        C k = new C();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter any number :");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        k.add(a,b);
+        k.show();
+        k.sub(a,b);
+        k.show1();
+        A k1 = new A() {
+            public void show(){
+                System.out.println("interface class of A");
+            }
+        };
+        k1.show();
+        B k2 = new B() {
+            public void show1(){
+                System.out.println("interface class of B");
+            }
+            public void show(){
+               System.out.println("interface class of A");
+            }
+        };
+        k2.show1();
+        k2.show();
+    }
+}
+=============================================================================================================================
+
+Qus 22 :- 
+non param void 
+interface A 
+add() 
+
+interface B 
+sub() 
+class C 
+
+a)constant
+----------------------------->
+interface A{
+    void add();
+}
+interface B{
+    void sub();
+}
+class C implements A,B{
+    public void add(){
+        int a= 15;
+        int b = 10;
+        System.out.println("add :"+(a+b));
+    }
+    public void sub(){
+        int a = 15;
+        int b = 5;
+        System.out.println("sub :"+(a+b));
+    }
+}
+public class Main{
+    public static void main(String[] args) {
+        C k = new C();
+        k.add();
+        k.sub();
+        A k1 = new A() {
+            public void add(){
+                int a = 15;
+                int b = 5;
+                System.out.println("add throug interfece class:"+(a+b));
+            }
+        };
+        k1.add();
+        B k2 = new B() {
+            public void sub(){
+                int a = 15;
+                int b = 5;
+                System.out.println("sub throug interface class :"+(a-b));
+            }
+        };
+        k2.sub();
+    }
+}
+................................................................................................. 
+b)user input 
+-------------------------->
+import java.util.Scanner;
+
+interface A{
+    void add();
+}
+interface B{
+    void sub();
+}
+class C implements A,B{
+    public void add(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter two number :");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        System.out.println("add :"+(a+b));
+    }
+    public void sub(){
+         Scanner sc = new Scanner(System.in);
+        System.out.println("enter two number :");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        System.out.println("sub :"+(a-b));
+    }
+}
+public class Main{
+    public static void main(String[] args) {
+        C k = new C();
+        k.add();
+        k.sub();
+        A k1 = new A() {
+            public void add(){
+                Scanner sc = new Scanner(System.in);
+        System.out.println("enter two number :");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+                System.out.println("add throug interfece class:"+(a+b));
+            }
+        };
+        k1.add();
+        B k2 = new B() {
+            public void sub(){
+                 Scanner sc = new Scanner(System.in);
+        System.out.println("enter two number :");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+                System.out.println("sub throug interface class :"+(a-b));
+            }
+        };
+        k2.sub();
+    }
+}
+=============================================================================================================================
+
+Qus 23 :-
+param void 
+interface A 
+add() 
+
+interface B 
+sub() 
+class C 
+
+a)constant 
+----------------------->
+interface A{
+    void add(int a, int b);
+}
+interface B{
+    void sub(int a, int b);
+}
+class C implements A,B{
+    public void add(int a, int b){
+        System.out.println("add :"+(a+b));
+    }
+    public void sub(int a, int b){
+        System.out.println("sub :"+(a-b));
+    }
+}
+public class Main{
+    public static void main(String[] args) {
+        C k = new C();
+        k.add(5,5);
+        k.sub(10,5);
+        A k1 = new A() {
+            public void add(int a, int b){
+                System.out.println("add throug interfece class:"+(a+b));
+            }
+        };
+        k1.add(5,3);
+        B k2 = new B() {
+            public void sub(int a, int b){
+                System.out.println("sub throug interface class :"+(a-b));
+            }
+        };
+        k2.sub(5,3);
+    }
+}
+=============================================================================================================================
+b)user input 
+----------------------------------->
+import java.util.Scanner;
+
+interface A{
+    void add(int a, int b);
+}
+interface B{
+    void sub(int a, int b);
+}
+class C implements A,B{
+    public void add(int a, int b){
+        System.out.println("add :"+(a+b));
+    }
+    public void sub(int a, int b){
+        System.out.println("sub :"+(a-b));
+    }
+}
+public class Main{
+    public static void main(String[] args) {
+        C k = new C();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter two number :");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        k.add(a,b);
+        k.sub(a,b);
+        A k1 = new A() {
+            public void add(int a, int b){
+                System.out.println("add throug interfece class:"+(a+b));
+            }
+        };
+        k1.add(a,b);
+        B k2 = new B() {
+            public void sub(int a, int b){
+                System.out.println("sub throug interface class :"+(a-b));
+            }
+        };
+        k2.sub(a,b);
+    }
+}
+=============================================================================================================================
+
+Qus 24 :- 
+non param int
+interface A 
+add() 
+
+interface B 
+sub() 
+class C 
+
+a)constant 
+------------------------->
+interface A{
+    int add();
+}
+interface B{
+    int sub();
+}
+class C implements A,B{
+    public int add(){
+        int a = 15;
+        int b = 5;
+        System.out.println("add :"+(a+b));
+        return a+b;
+    }
+    public int sub(){
+         int a = 15;
+        int b = 5;
+        System.out.println("sub :"+(a-b));
+        return a-b;
+    }
+}
+public class Main{
+    public static void main(String[] args) {
+        C k = new C();
+        k.add();
+        k.sub();
+        A k1 = new A() {
+            public int add(){
+                 int a = 15;
+                 int b = 5;
+                System.out.println("add throug interfece class:"+(a+b));
+                return a+b;
+            }
+        };
+        k1.add();
+        B k2 = new B() {
+            public int sub(){
+                 int a = 15;
+                 int b = 5;
+                System.out.println("sub throug interface class :"+(a-b));
+                return a-b;
+            }
+        };
+        k2.sub();
+    }
+}
+=============================================================================================================================
+b)user input 
+------------------------------->
+import java.util.Scanner;
+
+interface A{
+    int add();
+}
+interface B{
+    int sub();
+}
+class C implements A,B{
+    public int add(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter two numbers :");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        System.out.println("add :"+(a+b));
+        return a+b;
+    }
+    public int sub(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter two numbers :");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        System.out.println("sub :"+(a-b));
+        return a-b;
+    }
+}
+public class Main{
+    public static void main(String[] args) {
+        C k = new C();
+        k.add();
+        k.sub();
+        A k1 = new A() {
+            public int add(){
+                 Scanner sc = new Scanner(System.in);
+                 System.out.println("enter two numbers :");
+                 int a = sc.nextInt();
+                 int b = sc.nextInt();
+                System.out.println("add throug interfece class:"+(a+b));
+                return a+b;
+            }
+        };
+        k1.add();
+        B k2 = new B() {
+            public int sub(){
+                 Scanner sc = new Scanner(System.in);
+                 System.out.println("enter two numbers :");
+                 int a = sc.nextInt();
+                 int b = sc.nextInt();
+                System.out.println("sub throug interface class :"+(a-b));
+                return a-b;
+            }
+        };
+        k2.sub();
+    }
+}
+
+
+
+
+
+
+
+
