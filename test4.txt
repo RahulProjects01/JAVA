@@ -1,0 +1,175 @@
+ZE// 1)user input array 
+// x element user input 
+// check two numbers pairs sum is equal to x ?
+
+import java.util.*;
+
+public class Ab {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter arry size: ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+        int x = 6;
+        for (int i = 0; i < a.length; i++) {
+            a[i] = sc.nextInt();
+        }	
+
+        for (int i = 0; i < a.length; i++) {
+            for (int j = i + 1; j < a.length; j++) {
+                if (a[i] + a[j] == x) {
+                    System.out.println(a[i] + " " + a[j]);
+                }
+            }
+        }
+    }
+}
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2)how much ?
+user input array 
+x element user input 
+check two numbers pairs sum is equal to x ? 
+
+
+import java.util.*;
+
+public class Ab {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter arry size: ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+        int count = 0;
+        int x = 6;
+        for (int i = 0; i < a.length; i++) {
+            a[i] = sc.nextInt();
+        }
+
+        for (int i = 0; i < a.length; i++) {
+            for (int j = i + 1; j < a.length; j++) {
+                if (a[i] + a[j] == x) {
+                    count++;
+                }
+            }
+        }
+        System.out.println("count value: " + count);
+    }
+}
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+4)
+user input array 
+x element user input 
+check three numbers pairs sum is equal to x ? 
+
+
+import java.util.*;
+
+public class Ab {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter arry size: ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+        int x = 6;
+        for (int i = 0; i < a.length; i++) {
+            a[i] = sc.nextInt();
+        }
+
+        for (int i = 0; i < a.length; i++) {
+            for (int j = i + 1; j < a.length; j++) {
+                for (int k = i + 2; k < a.length; k++) {
+                    if (a[i] + a[j] + a[k] == x) {
+                        System.out.println(a[i] + " " + a[j]+" "+a[k]);
+                    }
+                }
+            }
+        }
+    }
+}
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.
+5)
+how much ?
+user input array 
+x element user input 
+check two numbers pairs sum is equal to x ? 
+
+
+import java.util.*;
+
+public class Ab {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter arry size: ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+        int x = 6;
+        int count = 0;
+        for (int i = 0; i < a.length; i++) {
+            a[i] = sc.nextInt();
+        }
+
+        for (int i = 0; i < a.length; i++) {
+            for (int j = i + 1; j < a.length; j++) {
+                for (int k = i + 2; k < a.length; k++) {
+                    if (a[i] + a[j] + a[k] == x) {
+                        count++;
+                    }
+                }
+            }
+        }
+        System.out.println("the avarage of : " + count);
+    }
+}
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+6) user input array input : 
+1 2 3 2 1 5 4 5 : 4 is unique element 
+
+
+import java.util.*;
+
+public class Ab {
+    static void printArray(int a[]) {
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
+        }
+        System.out.println();
+    }
+
+    static void uniqe(int a[]) {
+        for (int i = 0; i < a.length; i++) {
+            for (int j = i + 1; j < a.length; j++) {
+                if (a[i] == a[j]) {
+                    a[i] = -1;
+                    a[j] = -1;
+                }
+            }
+        }
+        int ab = -1;
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] > 0) {
+                ab = a[i];
+                System.out.println("the unique element is : " + ab);
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter arry size: ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+        for (int i = 0; i < a.length; i++) {
+            a[i] = sc.nextInt();
+        }
+        System.out.println("orignal array");
+        printArray(a);
+        System.out.println("unique");
+        uniqe(a);
+
+    }
+}
+
+
+
+

@@ -1,0 +1,166 @@
+a
+ab
+abc
+abcd
+
+public class PatternAlfabate {
+
+    public static void main(String[] args) {
+        char k, c;
+        for (c = 'a'; c <= 'd'; c++) {
+            for (k = 'a'; k <= c; k++) {
+                System.out.print(k);
+            }
+            System.out.println();
+        }
+    }
+}
+
+===============================================================
+a
+bb
+ccc
+dddd
+
+public class PatternAlfabate {
+
+    public static void main(String[] args) {
+        char k, c;
+        for (c = 'a'; c <= 'd'; c++) {
+            for (k = 'a'; k <= c; k++) {
+                System.out.print(c);
+            }
+            System.out.println();
+        }
+    }
+}
+==================================================================
+
+a
+bc
+def
+ghij
+
+
+public class PatternAlfabate {
+
+    public static void main(String[] args) {
+        char k, c,n='a';
+        
+        for (c = 'a'; c <= 'd'; c++) {
+            for (k = 'a'; k <= c; k++) {
+                System.out.print(n);
+                n++;
+            }
+            System.out.println();
+        }
+    }
+}
+
+========================================================================
+
+****a
+***bb
+**ccc
+*dddd
+
+public class PatternAlfabate {
+
+    public static void main(String[] args) {
+        char k, c,l;
+        
+        for (c = 'a'; c <= 'd'; c++) {
+            for(l='d';l>=c;l--){
+                System.out.print("*");
+            }
+            for (k = 'a'; k <= c; k++) {
+                System.out.print(c);
+            }
+            System.out.println();
+        }
+    }
+}
+===========================================================
+****a
+***ab
+**abc
+*abcd
+
+public class PatternAlfabate {
+
+    public static void main(String[] args) {
+        char k, c,l;
+        
+        for (c = 'a'; c <= 'd'; c++) {
+            for(l='d';l>=c;l--){
+                System.out.print("*");
+            }
+            for (k = 'a'; k <= c; k++) {
+                System.out.print(k);
+            }
+            System.out.println();
+        }
+    }
+}
+==========================================================================
+
+ABCD
+ABCD
+ABCD
+ABCD
+
+public class PatternAlfabate {
+
+    public static void main(String[] args) {
+        char i,j;
+        
+        for (i = 'A'; i <= 'D'; i++) {
+            for (j = 'A'; j <= 'D'; j++) {
+                System.out.print(j); 
+            }
+            System.out.println();
+        }
+    }
+}
+
+===========================================================================
+
+aaaa
+bbbb
+cccc
+dddd
+
+public class PatternAlfabate {
+
+    public static void main(String[] args) {
+        char i,j;
+        
+        for (i = 'a'; i <= 'd'; i++) {
+            for (j = 'a'; j <= 'd'; j++) {
+                System.out.print(i); 
+            }
+            System.out.println();
+        }
+    }
+}
+==============================================================================
+abcd
+efgh
+ijkl
+mnop
+
+public class PatternAlfabate {
+
+    public static void main(String[] args) {
+        char i,j,n='a';
+        
+        for (i = 'a'; i <= 'd'; i++) {
+            for (j = 'a'; j <= 'd'; j++) {
+                System.out.print(n); 
+                n++;
+            }
+            System.out.println();
+        }
+    }
+}
+=========================================================================
