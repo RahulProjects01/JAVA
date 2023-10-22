@@ -1,0 +1,98 @@
+// 1)string : 
+// print 
+
+// regex is my learning platform 
+
+public class Main{
+    public static void main(String[] args) {
+        String ar = "regex is my learning platform ";
+        System.out.println(ar+" ");
+    }
+}
+---------------------------------------------------------
+// 2)
+// string : 
+// print 
+
+// regex is my learning platform 
+// count : number of characters 
+
+public class Main{
+    public static void main(String[] args) {
+        String ar = "regex is my learning platform ";
+        char cr[] = ar.toCharArray();
+        int count = 0;    
+        for(int i=0;i<=cr.length;i++){
+            count++;
+        }
+        System.out.println(count);
+        
+    }
+}
+-------------------------------------------------------
+
+// 3)String : 
+// input a character check characher present or not ? 
+// how many time present ? 
+// ----------------------------
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your char: ");
+        char c = sc.next().charAt(0);
+        String ar = "regex is my learning platform ";
+        char cr[] = ar.toCharArray();
+
+        for (int i = 0; i <= cr.length; i++) {
+            if (cr[i] == c) {
+                System.out.println("present");
+                break;
+            } else {
+                System.out.println("not");
+                break;
+            }
+        }
+    }
+}
+----------------------------------------------------------
+4)String vowel is present or not ?
+how many vowel present (counting)
+which is consonant and vowel 
+
+regex is my learning platform :present
+
+
+public class Main {    
+    public static void main(String[] args) {        
+        int vCount = 0, cCount = 0;      
+        String str = "regex is my learning platform";      
+        str = str.toLowerCase();    
+        for(int i = 0; i < str.length(); i++) {      
+            if(str.charAt(i) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i' || str.charAt(i) == 'o' || str.charAt(i) == 'u') {     
+                vCount++;    
+            }       
+            else if(str.charAt(i) >= 'a' && str.charAt(i)<='z') {    
+                cCount++;    
+            }    
+        }    
+        System.out.println("Number of vowels: " + vCount);    
+        System.out.println("Number of consonants: " + cCount);    
+    }    
+}   
+
+--------------------------------------------------------------------
+revarce order character
+
+public class Main{
+    public static void main(String[] args) {
+        String str = "Regex is a learning platform ";
+        char ar[] = str.toCharArray();
+        for(int i=ar.length-1;i>=0;i--){
+          System.out.print(ar[i]+" ");
+        }
+    }
+}
+
+---------------------------------------------------------------------------

@@ -1,0 +1,230 @@
+// 1)number swap
+// a)with third variable 
+
+// public class Main{
+// public static void main(String[] args) {
+//   int a = 10;
+//   int b = 20;
+//   System.out.println(a);
+//   System.out.println(b);
+//   a = a+b;
+//   b = a-b;
+//   a = a-b;
+//   System.out.println(a);
+//   System.out.println(b);
+// }
+// }
+
+// b)without third varaible 
+
+// public class Main{
+//   public static void main(String[] args) {
+//     int a = 10;
+//     int b = 20;
+//     System.out.println(a);
+//     System.out.println(20);
+//     int c = 0;
+//     c = a;
+//     a = b;
+//     b = c;
+//     System.out.println(a);
+//     System.out.println(b);
+//   }
+// }
+
+
+
+
+// 2)prime number 
+// a)take a user input and check number is prime or not 
+
+// import java.util.Scanner;
+// public class Main {
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         System.out.println("Enter a number");
+//         int num=sc.nextInt();
+
+//         int count=0;
+//         for(int i=1;i<=num;i++){
+//             if(num%i==0){
+//                 count++;
+//             }
+//         }
+//         if(count==2){
+//             System.out.println("is prime number");
+//         }else{
+//             System.out.println("not prime number");
+//         }
+//     }
+// }
+
+
+// b)1 to 100 prime numbers 
+// public class Main {
+//     public static void main(String[] args) {
+
+//         for(int i=2;i<100;i++){
+//             boolean isPrime=true;
+
+//             for(int j=2;j<i;j++){
+//                 if(i%j==0){
+//                     isPrime=false;
+//                     break;
+//                 }
+//             }
+//             if(isPrime){
+//                 System.out.println(i);
+//             }
+//         }
+//     }
+// }
+
+
+
+3)
+when a user input a one then check a number is even 
+when a user input a 2 then check a number is odd
+when a user input a 3 then check a number is armstrong
+when a user input a 4 then check a number is pallindrome
+when a user input a 5 then calculate a number is factorial
+when a user input a 6 then calculate a number is fibonaacii
+
+
+even -->
+import java.util.*;
+public class Main{
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("num");
+    int num = sc.nextInt();
+    if(num % 2==0){
+      System.out.println("even");
+    }
+  }
+}
+
+
+-------------------------------------------------------------
+odd =--->
+
+import java.util.*;
+public class Main{
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("num");
+    int num = sc.nextInt();
+    if(num % 2 != 0){
+      System.out.println("odd");
+    }
+   
+  }
+}
+---------------------------------------------------------------------------------
+when a user input a 4 then check a number is pallindrome ---->
+
+import java.util.Scanner;
+// import java.util.scanner; // package
+public class Day3 {
+    public static void main (String[] args)
+    {
+        Scanner sc = new Scanner (System.in);
+        System.out.print("Enter a value");
+        int num = sc.nextInt();
+        System.out.print(num);
+
+        int rem,sum=0;
+        int temp = num;
+
+        while(num>0)
+        {
+            rem = num%10;
+            sum = sum*10+rem;
+            num = num/10;  
+        }
+        if(temp==sum)
+        {
+            System.out.print("this is pallindrome number");
+        }
+        else{
+            System.out.print("this is not pallindrome");
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+--------------------------------------
+
+
+import java.util.Scanner;
+
+public class Day5 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+        int rem,sum=0;;
+        int temp = num;
+        while (num > 0) {
+               rem = num%10;
+               sum = sum+rem*rem*rem;
+               num = num/10;
+
+            if (temp == sum) {
+                System.out.println("number is armstrong");
+                
+            } else{
+                System.out.print("not armstrong number");
+            }
+        }
+    }
+}
+-----------------------------------------------------
+
+when a user input a 5 then calculate a number is factorial------------>
+
+
+
+import java.util.Scanner;
+public class Day5{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a number");
+        int num = sc.nextInt();
+       int fact=1,i;
+       for(i=1;i<=num;i++)
+       {
+           fact = fact*i;
+       }
+      System.out.println("Factorial of "+num+" is: "+fact);   
+    }
+}
+--------------------------------------------------------------------------------------
+
+
+when a user input a 6 then calculate a number is fibonaacii--------------------->
+
+public class Prectice {
+    public static void main(String[] args) {
+        int first = 1, second = 1, third;
+        int n = 10;
+        int i = 1;
+        System.out.print(first + " " + second);
+        while (i < n) {
+            third = first + second;
+            System.out.print(" " + third);
+            first = second;
+            second = third;
+            i++;
+        }
+    }
+}

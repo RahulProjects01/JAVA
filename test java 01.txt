@@ -1,0 +1,285 @@
+// Question 1: ArrayList Operations
+// Create a program that demonstrates the following operations on an ArrayList of integers:
+
+// a)Add elements 1 to 5 to the ArrayList.------>
+// import java.util.*;
+// public class Main{
+//   public static void main(String[] args) {
+//     ArrayList<Integer> ar = new ArrayList<>();
+//     ar.add(1);
+//     ar.add(2);
+//     ar.add(3);
+//     ar.add(4);
+//     ar.add(5);
+//     System.out.println(ar+" ");
+//   }
+// }
+
+// -----------------------------------------------------
+
+// b)Remove the element at index 2.----->
+// import java.util.*;
+// public class Main{
+//   public static void main(String[] args) {
+//     ArrayList<Integer> ar = new ArrayList<>();
+//     ar.add(1);
+//     ar.add(2);
+//     ar.add(3);
+//     ar.add(4);
+//     ar.add(5);
+//     ar.remove(2);
+//     System.out.println(ar+" ");
+//   }
+// }
+
+// ----------------------------------------------------------------------------
+
+// c)Replace the element at index 1 with 10.
+// import java.util.*;
+// public class Main{
+//   public static void main(String[] args) {
+//     ArrayList<Integer> ar = new ArrayList<>();
+//     ar.add(1);
+//     ar.add(2);
+//     ar.add(3);
+//     ar.add(4);
+//     ar.add(5);
+//     ar.set(1,10);
+//     System.out.println(ar+" ");
+//   }
+// }
+
+// ----------------------------------------------------------------------------
+
+// d)Find and display the sum of all elements in the ArrayList.
+// import java.util.*;
+// public class Main{
+//   public static void main(String[] args) {
+//     ArrayList<Integer> ar = new ArrayList<>();
+//     ar.add(1);
+//     ar.add(2);
+//     ar.add(3);
+//     ar.add(4);
+//     ar.add(5);
+//     ar = addAll(2);
+//     System.out.println(ar+" ");
+//   }
+// }
+
+
+// ----------------------------------------------------------------------------
+
+// e)Sort the ArrayList in ascending order.
+// import java.util.*;
+// public class Main{
+//   public static void main(String[] args) {
+//     ArrayList<Integer> ar = new ArrayList<>();
+//     ar.add(1);
+//     ar.add(2);
+//     ar.add(3);
+//     ar.add(4);
+//     ar.add(5);
+    
+//     System.out.println(Sort(ar)+" ");
+//   }
+// }
+
+// ----------------------------------------------------------------------------
+
+// Question 2: HashMap Operations
+
+// Create a program that demonstrates the following operations on a HashMap of student names and their scores:
+
+// a)Add the following entries: "Alice" -> 90, "Bob" -> 85, "Charlie" -> 95.
+
+// import java.util.*;
+// public class Main{
+//   public static void main(String[] args) {
+//     HashMap<Integer, String> ap = new HashMap<>();
+//     ap.put(90 , "Alice");
+//     ap.put(85 , "Bob");
+//     ap.put(95 , "Charlie");
+//     System.out.println(ap+" ");
+//   }
+// }
+// ----------------------------------------------------------------------------
+
+
+// b)Remove the entry for "Bob."------>
+
+// import java.util.*;
+// public class Main{
+//   public static void main(String[] args) {
+//     HashMap<Integer, String> ap = new HashMap<>();
+//     ap.put(90 , "Alice");
+//     ap.put(85 , "Bob");
+//     ap.put(95 , "Charlie");
+//     ap.remove(85, "Bob");
+//     System.out.println(ap+" ");
+//   }
+// }
+// ----------------------------------------------------------------------------
+
+
+// c)Check if "Charlie" is a key in the HashMap and display the result.
+
+// import java.util.*;
+// public class Main{
+//   public static void main(String[] args) {
+//     HashMap<Integer, String> ap = new HashMap<>();
+//     ap.put(90 , "Alice");
+//     ap.put(85 , "Bob");
+//     ap.put(95 , "Charlie");
+//     ap.containsKey(95);
+//     System.out.println(ap+" ");
+//   }
+// }
+// ----------------------------------------------------------------------------
+
+
+// d)Display the scores of all students in the HashMap.
+
+
+// import java.util.*;
+// public class Main{
+//   public static void main(String[] args) {
+//     HashMap<Integer, String> ap = new HashMap<>();
+//     ap.put(90 , "Rahul");
+//     ap.put(85 , "ishal");
+//     ap.put(95 , "Joby");
+//     System.out.println(ap+" ");
+//   }
+// }
+// ----------------------------------------------------------------------------
+
+
+// Question 3: HashSet Operations
+
+// Create a program that demonstrates the following operations on a HashSet of colors:
+
+// a)Add the colors "Red," "Green," "Blue," "Red," "Yellow" to the HashSet.
+
+// import java.util.*;
+// public class Main{
+//   public static void main(String[] args) {
+//     HashSet <String> hash = new HashSet<>();
+//     hash.add("Red");
+//     hash.add("Green");
+//     hash.add("Blue");
+//     hash.add("Red");
+//     hash.add("Yellow");
+//    System.out.println(hash+" ");
+//   }
+// }
+// ----------------------------------------------------------------------------
+
+
+// b)Check if "Green" is in the HashSet and display the result.
+
+// import java.util.*;
+// public class Main{
+//   public static void main(String[] args) {
+//     HashSet <String> hash = new HashSet<>();
+//     hash.add("Red");
+//     hash.add("Green");
+//     hash.add("Blue");
+//     hash.add("Red");
+//     hash.add("Yellow");
+//    System.out.println(hash.contains("Green")+" ");
+//   }
+// }
+// ----------------------------------------------------------------------------
+
+
+// c)Remove "Blue" from the HashSet.
+
+// import java.util.*;
+// public class Main{
+//   public static void main(String[] args) {
+//     HashSet <String> hash = new HashSet<>();
+//     hash.add("Red");
+//     hash.add("Green");
+//     hash.add("Blue");
+//     hash.add("Red");
+//     hash.add("Yellow");
+//    System.out.println(hash.remove("Blue")+" ");
+//   }
+// }
+// ----------------------------------------------------------------------------
+
+
+// d)Display all unique colors in the HashSet.
+
+// import java.util.*;  
+// class Main{  
+//  public static void main(String args[]){  
+//   HashSet<String> hash=new HashSet<>();  
+//     hash.add("Red");
+//     hash.add("Green");
+//     hash.add("Blue");
+//     hash.add("Red");
+//     hash.add("Yellow");
+
+//   Iterator<String> itr=hash.iterator();  
+//   while(itr.hasNext()){  
+//    System.out.println(itr.next());  
+//   }  
+//  }  
+// }  
+
+// ===========================================================================================
+
+// Question 4: Email Validation
+
+// Write a Java program to validate if a given string is a valid email address.
+// using regex expression and string both ? 
+
+// import java.util.regex.Pattern;
+// import java.util.regex.Matcher;
+// public class Main{
+//     public static void main(String[] args) {
+       
+//         String email = "rahulB6@";
+//         String re = "[a-zA-Z]{6}[0-9]{1}[@]";
+//         Pattern p = Pattern.compile(re);
+//         Matcher m = p.matcher(email);
+
+//         if(m.find() && m.group(0).equals(email)){
+//             System.out.println("valid");
+//         }
+//         else{
+//             System.out.println("invalid ");
+//         }
+//     }
+// }
+
+
+// ==========================================================================
+
+// Question 5: String Palindrome
+
+// Write a Java program to check if a given string is a palindrome.
+
+// public class Main {
+//     public static void main(String[] args) {
+//         String s = "googf";
+//         char[] a = s.toCharArray();
+//         int i = 0, j = a.length - 1;
+//         int flag = 0;
+
+//         while (i < j) {
+//             if (a[i] != a[j]) {
+//                 flag = 1;
+//                 break;
+//             }
+//             i++;
+//             j--;
+//         }
+//         if (flag == 1) {
+//             System.out.println("no palindrome");
+//         } else {
+//             System.out.println("palindrome");
+//         }
+//     }
+// }
+
